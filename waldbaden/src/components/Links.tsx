@@ -19,7 +19,7 @@ export default function Dropdown({ dropdownOpen, setDropdownOpen }: dropdownType
             <Link href="/kontakt" className="text-white mb-2 mr-4" onClick={handleLinkClick}>
                 Anmeldung & Kontakt
             </Link>
-            <Link href="/ueber" className="text-white mb-2 mr-2" onClick={handleLinkClick}>
+            <Link href="/ueber" className="text-white mb-2 mr-4" onClick={handleLinkClick}>
                 Über das Waldbaden & mich
             </Link>
         </div>

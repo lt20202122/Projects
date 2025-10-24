@@ -4,6 +4,7 @@ import Hamburger from './Hamburger'
 import Image from 'next/image'
 import Links from './Links'
 import {useState} from 'react'
+import { useRouter } from 'next/navigation'
 
 const alegreya = Alegreya_Sans({
     subsets: ['latin'],
@@ -11,13 +12,14 @@ const alegreya = Alegreya_Sans({
 });
 
 export default function Header() {
+    const router = useRouter()
     const [dropdownOpen, setDropdownOpen] = useState<boolean>(false)
     return (
         <header className="h-[90px] w-screen flex items-center justify-between bg-main1 relative" style={{
             fontFamily:alegreya.className,
         }}>
             <Image src="/logo.svg" alt="logo" width={65} height={72} 
-            className="ml-4"/>
+            className="ml-4 cursor-pointer" onClick={()=>router.push("/")}/>
         <Hamburger dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen} />
         <Links dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen} />
         </header>

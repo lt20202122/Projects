@@ -10,7 +10,7 @@ export default function Hamburger({dropdownOpen, setDropdownOpen}:dropdownType) 
 
     return (
         <>
-        <div className="w-8 h-7 mr-4 hamburger:hidden"
+        <div className="w-8 h-7 mr-8 hamburger:hidden"
         onClick={()=>{
             setDropdownOpen(!dropdownOpen)
         }}>
