@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-np:500px;
+  --breakpoint-hamburger:440px;
+  --breakpoint-a:600px;
+  --color-main1:#4A6432
+}
