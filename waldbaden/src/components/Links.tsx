@@ -1,9 +1,27 @@
-import Link from 'next/link'
-export default function Links() {
+"use client"
+import Link from "next/link"
+import type { dropdownType } from "./Hamburger"
 
-    return <div className=" text-white leading-5 hidden hamburger:flex">
-        <Link href="/preise" className="pr-4">Termine & <span className="a:hidden"><br /></span>Preise</Link>
-        <Link href="/kontakt" className="pr-4">Anmeldung & <span className="a:hidden"><br /></span>Kontakt</Link>
-        <Link href="/ueber" className="pr-4">Über das Waldbaden & <span className="a:hidden"><br /></span>mich</Link>
-    </div>
+export default function Dropdown({ dropdownOpen, setDropdownOpen }: dropdownType) {
+    const handleLinkClick = () => {
+        setDropdownOpen(false)
+    }
+
+    return (
+        <div
+            className={`
+                text-white leading-5 hidden hamburger:flex
+            `}
+        >
+            <Link href="/preise" className="text-white mb-2 mr-4" onClick={handleLinkClick}>
+                Termine & Preise
+            </Link>
+            <Link href="/kontakt" className="text-white mb-2 mr-4" onClick={handleLinkClick}>
+                Anmeldung & Kontakt
+            </Link>
+            <Link href="/ueber" className="text-white mb-2 mr-2" onClick={handleLinkClick}>
+                Über das Waldbaden & mich
+            </Link>
+        </div>
+    )
 }

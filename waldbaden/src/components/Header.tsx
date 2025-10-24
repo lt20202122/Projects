@@ -19,7 +19,7 @@ export default function Header() {
             <Image src="/logo.svg" alt="logo" width={65} height={72} 
             className="ml-4"/>
         <Hamburger dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen} />
-        <Links />
+        <Links dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen} />
         </header>
     )
 }
