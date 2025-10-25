@@ -18,8 +18,8 @@ export default function Header() {
         <header className="h-[90px] w-screen flex items-center justify-between bg-main1 relative" style={{
             fontFamily:alegreya.className,
         }}>
-            <Image src="/logo.svg" alt="logo" width={65} height={72} 
-            className="ml-4 cursor-pointer" onClick={()=>router.push("/")}/>
+            <Image src="/logo.webp" alt="logo" width={65} height={72} 
+            className="ml-8 cursor-pointer" onClick={()=>router.push("/")}/>
         <Hamburger dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen} />
         <Links dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen} />
         </header>
