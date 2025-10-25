@@ -10,8 +10,8 @@ export default function QuoteSectionMobile({playfair}:{playfair:any}) {
             Innezuwerden, daß ich nie gelebt hatte.“ Henry David Thoreau
         </p>
         </section>
-        <section>
-            <img src="/wald2.png" alt="Wald" className="w-screen h-auto" />
+        <section className="quote:hidden">
+            <img src="/wald2.webp" alt="WaldHallo" className="w-screen h-auto" />
         </section>
 
         </>

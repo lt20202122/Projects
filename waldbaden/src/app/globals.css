@@ -4,5 +4,7 @@
   --breakpoint-hamburger:440px;
   --breakpoint-a:600px;
   --color-main1:#4A6432;
-  --breakpoint-quote:900px
+  --breakpoint-quote:900px;
+  --breakpoint-content1:1050px;
+  --breakpoint-content2:700px;
 }

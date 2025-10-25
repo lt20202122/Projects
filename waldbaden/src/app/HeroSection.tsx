@@ -21,9 +21,9 @@ export default function Hero({playfair}:{playfair:any}) {
         <section className="relative w-screen h-screen overflow-hidden">
             {/* Überschrift */}
         <h1
-            className={`${playfair.className} absolute top-7 left-10 z-10 text-white leading-[140%] text-6xl md:text-5xl lg:text-7xl drop-shadow-lg`}
+            className={`${playfair.className} absolute top-7 right-60 z-10 text-white leading-[140%] text-6xl md:text-5xl lg:text-7xl drop-shadow-lg`}
         >
-            Waldbaden mit <br />Christiane
+            Achtsamkeit <br/>im Wald
         </h1>
 
         {/* Hintergrundbild */}
