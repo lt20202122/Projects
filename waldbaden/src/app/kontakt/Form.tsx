@@ -22,7 +22,7 @@ export default function Form() {
     })
 
     if (res.ok) {
-      setSubmitted(true) // zeigt Danke-Nachricht
+      setSubmitted(true)
     } else {
       alert("Fehler beim Versenden der E-Mail")
     }
@@ -136,7 +136,7 @@ export default function Form() {
 
             <button
               type="submit"
-              className="bg-[#4a6432] text-white py-3 rounded hover:bg-[#5c7c3f] transition sm:col-span-2"
+              className="bg-[#4a6432] text-white py-3 rounded hover:bg-[#5c7c3f] transition sm:col-span-2 cursor-pointer"
             >
               Absenden
             </button>
@@ -153,7 +153,7 @@ export default function Form() {
           </p>
           <button
             onClick={() => setSubmitted(false)}
-            className="mt-8 bg-[#4a6432] text-white py-2 px-6 rounded hover:bg-[#5c7c3f] transition"
+            className="mt-8 bg-[#4a6432] text-white py-2 px-6 rounded hover:bg-[#5c7c3f] transition cursor-pointer"
           >
             Weitere Anmeldung
           </button>

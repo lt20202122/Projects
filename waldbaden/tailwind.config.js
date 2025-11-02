@@ -1,3 +1,5 @@
+
+@@ -1,12 +0,0 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 content: [

@@ -24,11 +24,11 @@ export async function POST(req: NextRequest) {
         Name: ${data.name} <br/>
         E-Mail: ${data.email} <br/>
         Personen: ${data.people} <br/>
-        Nachricht: ${data.message || "Keine"}
-        Ort: ${data.city}
-        Postleitzahl: ${data.zip}
-        Straße & Hausnummer: ${data.address}
-        Termin: ${data.date}
+        Nachricht: ${data.message || "Keine"} <br/>
+        Ort: ${data.city} <br/>
+        Postleitzahl: ${data.zip} <br/>
+        Straße & Hausnummer: ${data.address} <br/>
+        Termin: ${data.date} <br/>
       `,
     });
     console.log("Answer: ",answer)
