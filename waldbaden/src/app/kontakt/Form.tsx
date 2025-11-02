@@ -43,6 +43,11 @@ export default function Form() {
           <form
             onSubmit={handleSubmit}
             className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-[80vw] max-w-[700px]"
+            onKeyDown={(e) => {
+            if (e.key === "Enter" && e.target instanceof HTMLInputElement) {
+              e.preventDefault();
+            }
+          }}
           >
             <label className="flex flex-col">
               Termin auswählen

@@ -25,31 +25,30 @@ export default function Hero({ playfair }: { playfair: any }) {
     }, []);
 
     return (
-        <section className="relative w-screen h-screen overflow-hidden">
+        <section className="relative w-full h-screen overflow-hidden">
         {/* Überschrift */}
-        <div className="w-screen flex justify-end-safe p-10 px-[8vw] pt-[10vh]">
+        <div className="absolute inset-0 flex items-start justify-end p-8 sm:p-12 lg:p-16 z-10">
             <h1
-            className={`${playfair.className} z-10 text-white leading-[140%] text-6xl md:text-5xl lg:text-7xl drop-shadow-lg tracking-[2]`}
+            className={`${playfair.className} text-white leading-tight text-5xl sm:text-6xl lg:text-7xl drop-shadow-xl max-w-3xl text-right`}
             >
             Achtsamkeit <br />im Wald
             </h1>
         </div>
 
         {/* Hintergrundbild */}
-        <div className="absolute top-0 left-0 w-screen h-[120%] z-0">
+        <div className="absolute inset-0">
             <Image
             src="/wald.webp"
             alt="Wald"
             fill
-            sizes="(max-width: 768px) 100vw, 100vw"
+            sizes="100vw"
+            className="object-cover"
             style={{
-                objectFit: "cover",
-                objectPosition: "center",
                 transform: `scale(${scale})`,
-                transition: scale > 1 ? "transform 0.8s ease-out" : undefined,
+                transition: scale > 1 ? "transform 0.8s ease-out" : "none",
             }}
             priority
-            fetchPriority="high"
+            quality={90}
             />
         </div>
         </section>

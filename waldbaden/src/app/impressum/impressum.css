@@ -1,12 +1,12 @@
-h1 {
+.h1 {
     font-size: 36px;
     color: #5c7c3f;
 }
-h2 {
+.h2 {
     font-size: 28px;
     color: #5c7c3f;
 }
-h3 {
+.h3 {
     font-size:22px;
     margin-top:5px;
 }

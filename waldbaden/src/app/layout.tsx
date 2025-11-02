@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import Header from '@/components/Header'
 import Footer from "@/components/Footer";
 import "./globals.css";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -14,8 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "waldbaden-mit-christiane.de",
     locale: "de_DE",
-    type: "website",
-    // NICHT hier: title, description, images (seitenspezifisch)
+    type: "website", //MeSection page.tsx links
   },
   
   twitter: {
@@ -44,11 +51,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
-      <body
-        className={`antialiased`}>
+    <html lang="de" className="scroll-smooth">
+      <body className="antialiased min-h-screen flex flex-col bg-white">
         <Header />
-        {children}
+        <main className="grow relative">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

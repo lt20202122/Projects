@@ -12,18 +12,18 @@ const ProfileSection = dynamic(() => import("./ProfileSection"));
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Über mich", // Wird zu "Über mich | Waldbaden mit Christiane"
-  description: "Spezifische Beschreibung für diese Seite", //TODO
+  title: "Waldbaden mit Christiane", // Wird zu "Über mich | Waldbaden mit Christiane"
+  description: "Waldbaden in Braunschweig, Gifhorn & Umgebung – achtsam, entspannend, mit der Natur verbunden. Lass den Alltag hinter dir und finde Ruhe im Wald.",
   openGraph: {
-    title: "Über mich",
-    description: "...", //TODO
-    images: [{ url: "/og-about.jpg", width: 1200, height: 630 }] //TODO
+    title: "Waldbaden mit Christiane",
+    description: "Waldbaden in Braunschweig, Gifhorn & Umgebung – achtsam, entspannend, mit der Natur verbunden. Lass den Alltag hinter dir und finde Ruhe im Wald.",
+    images: [{ url: "/wald6.webp", width: 1200, height: 630 }] //TODO
   },
 }
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "600", "700"],
   variable: "--font-playfair",
   display: "swap",
 });
@@ -32,7 +32,7 @@ export default function Home() {
   
 
   return (
-    <main>
+    <main className="flex flex-col items-center">
       <HeroSection playfair={playfair}/>
       <QuoteSectionLg playfair={playfair}/>
       <QuoteSectionMobile playfair={playfair}/>

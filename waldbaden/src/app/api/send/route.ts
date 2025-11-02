@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
 
     // E-Mail an die Person, die sich angemeldet hat
     const answer = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "christianeimwald@gmx.de",
       to: data.email,
       subject: "Danke für deine Anmeldung 🌿",
       html: `<p>Hallo ${data.name},<br/>Wir haben deine Anmeldung erhalten! In wenigen Tagen wird dir mitgeteilt werden, ob ein Platz frei ist!</p>`,
@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
 
     // Optional: E-Mail an dich selbst mit allen Daten
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "christianeimwald@gmx.de",
       to: data.email,
       subject: `Neue Anmeldung von ${data.name}`,
       html: `

@@ -2,17 +2,26 @@
 export default function QuoteSectionMobile({playfair}:{playfair:any}) {
     return (
         <>
-        <section className="min-w-screen overflow-auto relative quote:hidden bg-[#9AB086] flex justify-center px-[10%] py-[7%]">
-        <p className={`text-[#FFF] ${playfair.className} text-[4vw] leading-[2.22222em] h-full`}>
-            „Ich ging in die Wälder, weil ich bewusst leben wollte. Ich wollte das
-            Dasein auskosten. Ich wollte das Mark des Lebens einsaugen! Und alles
-            fortwerfen, das kein Leben barg, um nicht an meinem Todestag
-            Innezuwerden, daß ich nie gelebt hatte.“ Henry David Thoreau
-        </p>
-        </section>
-        <section className="quote:hidden">
-            <img src="/wald2.webp" alt="WaldHallo" className="w-screen h-auto" />
-        </section>
+        <div className="quote:hidden">
+            <section className="bg-[#9AB086] px-6 py-12">
+                <blockquote className={`text-white ${playfair.className} text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto`}>
+                    „Ich ging in die Wälder, weil ich bewusst leben wollte. Ich wollte das
+                    Dasein auskosten. Ich wollte das Mark des Lebens einsaugen! Und alles
+                    fortwerfen, das kein Leben barg, um nicht an meinem Todestag
+                    Innezuwerden, daß ich nie gelebt hatte."
+                    <footer className="italic mt-6">
+                        — Henry David Thoreau
+                    </footer>
+                </blockquote>
+            </section>
+            <section className="aspect-video relative">
+                <img 
+                    src="/wald2.webp" 
+                    alt="Wald im Nebel" 
+                    className="w-full h-full object-cover"
+                />
+            </section>
+        </div>
 
         </>
     );

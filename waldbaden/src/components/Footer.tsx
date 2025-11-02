@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
           <div className="w-6 h-6 relative hover:cursor-pointer"
           onClick={()=>{
-            window.location.href = "https://www.instagram.com/christianeimwald/"
+            window.location.href = "https://www.linkedin.com/in/christiane-thoroe-90477023a"
           }}>
             <Image
             src="/linkedin.svg"

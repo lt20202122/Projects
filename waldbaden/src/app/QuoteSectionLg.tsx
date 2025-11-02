@@ -1,21 +1,26 @@
 export default function QuoteSectionLg({playfair}:{playfair:any}) {
     return (
-        <section className="h-screen p-20 relative max-quote:hidden">
-        <div className="relative w-full h-full grid grid-rows-1 grid-cols-[1fr_minmax(auto,1fr)] bg-[#9AB086]">
-        <div className="h-full flex items-center justify-center">
-            <p className={`text-[#FFF] ${playfair.className} text-2xl leading-[1.4em] max-w-[40vw] z-10 relative p-4`}>
-                „Ich ging in die Wälder, weil ich bewusst leben wollte. Ich wollte das
-                Dasein auskosten. Ich wollte das Mark des Lebens einsaugen! Und alles
-                fortwerfen, das kein Leben barg, um nicht an meinem Todestag
-                Innezuwerden, daß ich nie gelebt hatte.“ <br/><span className="italic">-Henry David Thoreau</span>
-            </p>
-        </div>
-        
-        <img
-            src="/wald2.webp"
-            className="h-full z-20 max-w-[40vw]"
-            alt="Rectangle 2"
-        />
+        <section className="max-w-7xl mx-auto py-24 px-0 relative max-quote:hidden w-screen">
+            <div className="grid grid-cols-2 bg-accent overflow-hidden">
+                <div className="p-16 flex items-center h-screen px-26">
+                    <blockquote className={`text-white ${playfair.className} text-2xl sm:text-[28px] leading-9`}>
+                        „Ich ging in die Wälder, weil ich bewusst leben wollte. Ich wollte das
+                        Dasein auskosten. Ich wollte das Mark des Lebens einsaugen! Und alles
+                        fortwerfen, das kein Leben barg, um nicht an meinem Todestag
+                        Innezuwerden, daß ich nie gelebt hatte.“
+                        <p className="italic mt-8 text-2xl">
+                            Henry David Thoreau
+                        </p>
+                    </blockquote>
+                </div>
+                
+                <div className="relative aspect-4/3">
+                    <img
+                        src="/wald2.webp"
+                        className="absolute inset-0 w-full h-full object-cover"
+                        alt="Wald im Nebel"
+                    />
+                </div>
         </div>
         </section>
         

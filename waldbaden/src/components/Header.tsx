@@ -1,5 +1,5 @@
 "use client"
-import {Alegreya_Sans} from 'next/font/google'
+import {Alegreya_Sans, Playfair_Display} from 'next/font/google'
 import Hamburger from './Hamburger'
 import Image from 'next/image'
 import Links from './Links'
@@ -11,13 +11,18 @@ const alegreya = Alegreya_Sans({
     weight: ['400', '700'],
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
 export default function Header() {
     const router = useRouter()
     const [dropdownOpen, setDropdownOpen] = useState<boolean>(false)
     return (
-        <header className="h-[90px] w-screen flex items-center relative justify-between bg-main1 pr-8" style={{
-            fontFamily:alegreya.className,
-        }}>
+        <header className={`h-[90px] w-screen flex items-center relative justify-between bg-main1 pr-8 ${playfair.className} font-medium bg-[#4a6432]`}>
             <div className='relative h-3/4 w-70'>
             <Image src="/logo.webp" alt="logo" fill
             className="ml-8 cursor-pointer object-contain" onClick={()=>router.push("/")}/>
