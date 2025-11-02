@@ -37,7 +37,7 @@
     "**/*.mts",
     ".next\\dev/types/**/*.ts",
     ".next\\dev/types/**/*.ts"
-  ],
+, "src/app/mein-angebot/Location2Course1.tsx", "src/app/datenschutz/page.tsx"  ],
   "exclude": [
     "node_modules"
   ]

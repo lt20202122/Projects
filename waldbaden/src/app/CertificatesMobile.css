@@ -1,0 +1,29 @@
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 24px;
+}
+
+.div2,
+.div3,
+.div4,
+.div6 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Einheitliche Größe für Zertifikate */
+.Certificate1Div,
+.Certificate2Div,
+.Certificate3Div,
+.ImageDiv {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2; /* z. B. 3:2-Format */
+  overflow: hidden;}
+.certimg {
+  object-fit: contain;
+}

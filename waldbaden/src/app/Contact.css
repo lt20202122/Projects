@@ -1,0 +1,25 @@
+
+.socials-container{
+  display: flex;
+  gap: 20px;
+}
+.socials-container a{
+  background-color: white;
+  padding: 1em;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.socials-container a svg{
+  height: 32px;
+}
+
+.socials-container a:hover{
+  background-color: rgba(0, 128, 0, 0.114);;
+  fill: rgb(0, 128, 0);
+}

@@ -20,21 +20,30 @@ export default function Card({imageSrc, id}:CardProps) {
         <p className="text-black text-xl leading-[1.8em] mb-12 max-content2:w-[60vw]">
             {Cards[id].content}
         </p>
-        <p className="text-[#738B5E] text-lg font-medium leading-[1.66667em] mb-12 h-[130px]">
-                {Cards[id].dates === "None" ? "" : Cards[id].dates.split("#").map((line,i) =>
-                <span key={id}>
-                    {line}
-                    <br/>
-                </span>
-            )}
-        </p>
-        <div className="boxTotal">
-            <Link className="text-[#FFF] text-[22px] leading-[1.36364em] border-2 border-[#2E5F2D] bg-[#84aa70] w-54 h-16 flex justify-center items-center rounded-sm
-            hover:bg-[#9ec38a] transition-colors duration-400"
-            href="/mein-angebot">
-                Alle Infos
-            </Link>
+        <div>
+            <p className="text-[#738B5E] text-lg font-medium leading-[1.66667em] mb-12 h-[130px] hidden content2:block">
+                    {Cards[id].dates === "None" ? "" : Cards[id].dates.split("#").map((line,i) =>
+                    <span key={id}>
+                        {line}
+                        <br/>
+                    </span>
+                )}
+            </p>
+            <p className="text-[#738B5E] text-lg font-medium leading-[1.66667em] mb-12 inline-block content2:hidden">
+                    {Cards[id].dates === "None" ? "" : Cards[id].dates.split("#").map((line,i) =>
+                    <span key={`${id}-${i}`}>
+                        {line}
+                        <br/>
+                    </span>
+                )}
+            </p>
         </div>
+        
+        <Link className="text-[#FFF] text-[22px] leading-[1.36364em] border-2 border-[#2E5F2D] bg-[#84aa70] w-54 h-16 flex justify-center items-center rounded-sm
+        hover:bg-[#9ec38a] transition-colors duration-400"
+        href="/mein-angebot">
+            Alle Infos
+        </Link>
         
         </div>
     )

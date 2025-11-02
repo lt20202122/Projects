@@ -13,14 +13,17 @@ export default function Dropdown({ dropdownOpen, setDropdownOpen }: dropdownType
                 text-white leading-5 hidden hamburger:flex
             `}
         >
-            <Link href="/preise" className="text-white mb-2 mr-4" onClick={handleLinkClick}>
-                Termine & Preise
+            <Link href="/mein-angebot" className="text-white mb-2 mr-4 hover:text-[#d7e6d1] transition-colors duration-400" onClick={handleLinkClick}>
+                Termine
             </Link>
-            <Link href="/kontakt" className="text-white mb-2 mr-4" onClick={handleLinkClick}>
-                Anmeldung & Kontakt
+            <Link href="/kontakt" className="text-white mb-2 mr-4 hover:text-[#d7e6d1] transition-colors duration-400" onClick={handleLinkClick}>
+                Anmeldung
             </Link>
-            <Link href="/ueber" className="text-white mb-2 mr-4" onClick={handleLinkClick}>
-                Über das Waldbaden & mich
+            <Link href="/ueber/waldbaden" className="text-white mb-2 mr-4 hover:text-[#d7e6d1] transition-colors duration-400" onClick={handleLinkClick}>
+                Über das Waldbaden
+            </Link>
+            <Link href="/ueber/mich" className="text-white mb-2 mr-4 hover:text-[#d7e6d1] transition-colors duration-400" onClick={handleLinkClick}>
+                Über mich
             </Link>
         </div>
     )

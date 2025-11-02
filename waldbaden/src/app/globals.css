@@ -1,4 +1,8 @@
 @import "tailwindcss";
+
+html, body {
+  overflow-x: hidden;
+}
 @theme {
   --breakpoint-np:500px;
   --breakpoint-hamburger:440px;
@@ -7,4 +11,8 @@
   --breakpoint-quote:900px;
   --breakpoint-content1:1050px;
   --breakpoint-content2:700px;
+  --breakpoint-profile1:920px;
+  --breakpoint-contact:1000px;
+  --breakpoint-certificates: 800px;
+  --breakpoint-angebot:700px;
 }
