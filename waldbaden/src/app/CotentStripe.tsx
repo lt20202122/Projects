@@ -1,8 +1,8 @@
 export default function ContentStripe({playfair}:{playfair:any}) {
     return (
-        <section className={`w-full bg-[#EBECEA] ${playfair.className} py-8 my-8`}>
+        <section className={`w-full bg-bg-light ${playfair.className} py-8 my-8`}>
             <div className="max-w-4xl mx-auto px-6 md:px-8">
-                <h2 className="text-maim-light text-3xl md:text-4xl font-normal leading-relaxed text-center mb-8 whitespace-nowrap text-main-light">
+                <h2 className="text-maim-light text-3xl md:text-4xl leading-relaxed text-center mb-4 md:whitespace-nowrap text-main font-semibold">
                     Waldbaden in Braunschweig, Gifhorn und Umgebung
                 </h2>
                 <p className="text-lg font-normal leading-relaxed text-center max-w-4xl mx-auto">

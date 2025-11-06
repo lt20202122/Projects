@@ -3,10 +3,10 @@ import Image from "next/image"
 
 export default function CertificatesLg({ playfair }: { playfair: any }) {
   return (
-    <div className={`bg-[#4a6432ab] p-10 px-[10vw] hidden certificates:flex h-[70vh] items-center justify-between ${playfair.className}`}>
+  <div className={`bg-[#4a6432ab] p-8 md:p-10 px-6 md:px-[10vw] hidden certificates:flex h-[70vh] items-center justify-between ${playfair.className}`}>
         {/* Linke Spalte: Text oben, Akademie-Logo unten */}
         <div className="flex flex-col justify-between h-full py-8">
-          <p className="text-left text-white text-[28px] font-normal leading-relaxed whitespace-nowrap">
+          <p className="text-left text-white text-[28px] font-normal leading-9 whitespace-nowrap">
             Zertifizierte <br />Kursleiterin <br />für Waldbaden
           </p>
           <div className="relative w-[180px] h-[180px]">
@@ -20,7 +20,7 @@ export default function CertificatesLg({ playfair }: { playfair: any }) {
         </div>
 
         {/* Zertifikat 1 */}
-        <div className="relative h-[90%] w-[22vw]">
+  <div className="relative h-[90%] w-full md:w-[22vw]">
           <img
             src="/Zertifikat1.webp"
             alt="Zertifikat Kursleiterin"
@@ -30,7 +30,7 @@ export default function CertificatesLg({ playfair }: { playfair: any }) {
         </div>
 
         {/* Zertifikat 2 */}
-        <div className="relative h-[90%] w-[22vw] ml-7">
+  <div className="relative h-[90%] w-full md:w-[22vw] ml-7">
           <img
             src="/Zertifikat2.webp"
             alt="Zertifikat Kursleiterin"
@@ -40,7 +40,7 @@ export default function CertificatesLg({ playfair }: { playfair: any }) {
         </div>
         
         {/* Zertifikat 3 */}
-        <div className="relative h-[90%] w-[22vw] ml-2">
+  <div className="relative h-[90%] w-full md:w-[22vw] ml-2">
           <img
             src="/Zertifikat3.webp"
             alt="Zertifikat Kursleiterin"
@@ -51,7 +51,7 @@ export default function CertificatesLg({ playfair }: { playfair: any }) {
 
         {/* Rechte Spalte: Text */}
         <div className="flex items-start h-full py-8">
-          <p className="text-right text-white text-[28px] font-normal leading-relaxed">
+          <p className="text-right text-white text-[28px] font-normal leading-9">
             Zertifizierte <br />Naturmentorin
           </p>
         </div>

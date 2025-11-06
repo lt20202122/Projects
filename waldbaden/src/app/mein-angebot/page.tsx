@@ -2,15 +2,13 @@ import { Playfair_Display } from "next/font/google";
 import HeroSection from "./HeroSection";
 import Course1Section from "./(Course1)/Course1Section";
 import Course2Section from "./(Course2)/Course2Section";
-import Location1Course1 from "./(Course1)/Location1Course1";
 import Location2Course1 from "./(Course1)/Location2Course1";
 import Course3Section from "./(Course3)/Course3Section";
 import { Metadata } from "next";
 import TipsSectionLg from "./TipsSectionLg";
-import TipsSectionMobile from "./TipsSectionMobile";
 
 export const metadata: Metadata = {
-  title: "Über mich", // Wird zu "Über mich | Waldbaden mit Christiane"
+  title: "Mein Angebot", // Wird zu "Über mich | Waldbaden mit Christiane"
   description: "Spezifische Beschreibung für diese Seite", //TODO
   openGraph: {
     title: "Über mich",
@@ -32,12 +30,10 @@ export default function MeinAngebot() {
         <HeroSection/>
         <section>
           <Course1Section/>
-          <Location1Course1/>
           <Location2Course1/>
         </section>
         <Course2Section />
         <Course3Section />
         <TipsSectionLg />
-        <TipsSectionMobile />
     </main>
 }

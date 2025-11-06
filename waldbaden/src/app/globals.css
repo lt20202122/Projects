@@ -36,3 +36,13 @@ img {
   --breakpoint-certificates: 800px;
   --breakpoint-angebot: 700px;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: block;
+}

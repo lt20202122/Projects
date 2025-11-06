@@ -10,15 +10,20 @@ export default function Hamburger({dropdownOpen, setDropdownOpen}:dropdownType) 
 
     return (
         <>
-        <div className="w-8 h-7 mr-8 hamburger:hidden"
-        onClick={()=>{
-            setDropdownOpen(!dropdownOpen)
-        }}>
-        <div className={`bg-gray-300 ${width} ${height} mb-2`}></div>
-        <div className={`bg-gray-300 ${width} ${height} mb-2`}></div>
-        <div className={`bg-gray-300 ${width} ${height} mb-2`}></div>
-        </div>
-        <Dropdown dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen}/>
+            <button 
+                className="w-8 h-7 mr-8 flex flex-col justify-between cursor-pointer md:hidden z-50"
+                onClick={() => {
+                    setDropdownOpen(!dropdownOpen)
+                    console.log("Dropdown opened/closed:", !dropdownOpen)
+                }}
+                aria-label="Menu"
+            >
+                <div className={`bg-gray-300 ${width} ${height}`}></div>
+                <div className={`bg-gray-300 ${width} ${height}`}></div>
+                <div className={`bg-gray-300 ${width} ${height}`}></div>
+            </button>
+            
+            <Dropdown dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen}/>
         </>
     );
-    }
+}

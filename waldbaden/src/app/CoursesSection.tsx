@@ -5,13 +5,13 @@ export default function CoursesSection({playfair}:{playfair:any}) {
 
     return  (
         <>
-        <div className={`w-screen flex justify-center ${playfair.className}`}>
-            <section className="grid content1:grid-cols-3 w-max gap-10 content2:grid-cols-2 grid-cols-1">
+        <div className={`w-full flex justify-center ${playfair.className}`}>
+            <section className="grid content1:grid-cols-3 w-full gap-10 content2:grid-cols-2 grid-cols-1 overflow-x-hidden">
                 <Card imageSrc="/wald3.webp" id={0}/>
                 <Card imageSrc="/wald4.webp" id={1}/>
                 <Card imageSrc="/wald5.webp" id={2}/>
             </section> </div>
-            <div className={`text-center text-[18px] pt-10 px-[20vw] ${playfair.className} flex flex-col items-center leading-7`}>
+            <div className={`text-center text-[18px] pt-10 md:px-[20vw] ${playfair.className} flex flex-col items-center leading-7 px-[10vw]`}>
                 <p>Ich biete Waldbaden in Gifhorn, Braunschweig und Umgebung an. 
                     Die <strong className="text-[#4D5E3D]">Entspannte Auszeit im Wald</strong> findet in einer kleinen Gruppe im wunderschönen, idyllischen Ruhewald Ribbesbüttel statt.
                     <strong className="text-[#4D5E3D]"> Achtsam in den Feierabend</strong> findet ebenso in einer kleinen Gruppe im beliebten Eyßelwald in Gifhorn statt. 

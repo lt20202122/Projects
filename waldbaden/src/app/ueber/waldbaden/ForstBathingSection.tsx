@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ForestBathingSection() {
   return (
-    <section className=" px-[15vw] flex flex-col">
+  <section className="px-4 md:px-[15vw] flex flex-col">
     <div className="w-[65vw] h-[70vh] relative my-10 mb-10 hidden md:block">
             <Image
             src="/wald15.webp"

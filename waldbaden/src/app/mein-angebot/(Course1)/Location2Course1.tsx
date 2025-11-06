@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function LocationsCourse2() {
     return (
-        <div className={`min-w-screen relative bg-[#EBECEA] px-[10vw]`}>
-            <h5 className={`text-[#627D60] text-[22px] font-bold leading-[1.66667em] px-2 mb-4`}>
+        <div className={`min-w-screen relative px-[13vw]`}>
+            <h5 className={`text-main-light text-[22px] font-bold leading-[1.66667em] px-2 mb-3`}>
             Ruhewald Ribbesbüttel
             </h5>
-            <ul className="text-[18px] list-disc pl-5 flex gap-2 flex-col mb-10">
+            <ul className="text-[18px] list-disc pl-5 flex gap-0.5 flex-col mb-10">
             <li>Dauer: 3 Stunden</li>
             <li>Preis pro Person: 40 € </li>
             <li>Strecke: ca. 2 km</li>
@@ -17,13 +17,15 @@ export default function LocationsCourse2() {
 
             <li className="text-[#738d5c] font-bold">Sonntag, 21. September | 14.00 - 17.00 Uhr</li>
             </ul>
-        <Link className="text-[#FFF] text-[22px] leading-[1.36364em] border-2 border-[#2E5F2D] bg-[#84aa70] w-54 h-12 flex justify-center items-center rounded-sm
-            hover:bg-[#9ec38a] transition-colors duration-400 my-10 mx-auto"
-            href="/kontakt">
-                Anmelden
+        <Link className="text-[#4D5E3D] text-[22px] leading-[1.36em] border border-[#2e5f2d]
+                    bg-white w-59 h-13 whitespace-nowrap flex justify-center items-center hover:bg-[#9ab086]
+                    transition-colors duration-400 mt-10 hover:text-white mb-16
+                    "
+                    href="/kontakt">
+                        Anmelden
         </Link>
         <p className="text-[18px] mb-5"><span className="text-[#738d5c]">Frag mich gern für ein individuelles Waldbad mit Deinen Freunden, Kolleginnen oder Deiner Familie an. <br/></span>
-    Ein Angebot in Kooperation mit dem Ruhewald Ribbesbüttel <br/>
+    Ein Angebot in Kooperation mit dem Ruhewald Ribbesbüttel <br/> <br/>
     Der Ruhewald Ribbesbüttel ist ein ganz besonderer Ort der Ruhe und Geborgenheit. 
     Uralte Bäume stehen dort neben neu gepflanzten und es gibt Totholz in den unterschiedlichsten Formen. 
     Dadurch zeigt sich eine hohe Artenvielfalt sowohl bei den Tieren als auch bei den Pflanzen. 

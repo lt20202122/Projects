@@ -32,14 +32,14 @@ export default function Home() {
   
 
   return (
-    <main className="flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <HeroSection playfair={playfair}/>
       <QuoteSectionLg playfair={playfair}/>
       <QuoteSectionMobile playfair={playfair}/>
       <ContentStripe playfair={playfair}/>
       <CoursesSection playfair={playfair}/>
       <ProfileSection playfair={playfair}/>
-    </main>
+    </div>
     
   );
 }

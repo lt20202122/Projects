@@ -5,7 +5,7 @@ export default function CertificatesSection() {
     <section className="flex flex-col">
 
       {/* --- Abschnitt 1: Naturmentorin --- */}
-      <div className="bg-[#9ab086] w-screen text-white">
+      <div className="bg-[#9ab086] w-full md:w-screen text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-12 lg:py-20">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
             <div className="w-full lg:w-1/3">

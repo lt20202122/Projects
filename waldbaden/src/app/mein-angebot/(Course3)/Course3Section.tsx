@@ -3,20 +3,28 @@ import Link from "next/link";
 
 export default function Course3Section() {
     return (
-        <section className={`px-[10vw] mb-10 w-screen py-8 bg-[#f5f6f4]`}>
-        <div className="w-[80vw] h-[70vh] relative my-10 mx-auto">
+        <section className={`md:px-[13vw] w-screen py-8`}>
+        <div className="w-[75vw] h-[80vh] relative mb-14 mx-auto md:block hidden">
             <Image
             src="/wald10.webp"
             alt="Hängematte"
             fill
+            className="object-contain"
             />
         </div>
-        <h2 className="text-[28px] text-[#5c7c3f] mb-2">Dein persönliches Waldbad</h2>
+        <div className=" relative mb-14 w-full h-[35vh] block md:hidden">
+            <Image
+            src="/wald10MOBILE.webp"
+            alt="Hängematte"
+            fill
+            className="object-contain"
+            />
+        </div>
+        <div className="px-[13vw] md:px-0">
+        <h2 className="text-[28px] text-[#5c7c3f] mb-2 ">Dein persönliches Waldbad</h2>
         <p className="text-[21px] mb-5">Mit allen Sinnen achtsam im Wald </p>
         <p className="text-[18px]">
-            In einer kleinen Gruppe erkunden wir zur Feierabendzeit den Querumer Forst in Braunschweig bzw. den Eyßelwald in Gifhorn. 
-            Mit verschiedenen Achtsamkeitsübungen und kreativen, spielerischen Elementen schalten wir das Gedankenkarussell ab, erholen uns vom Stress des Tages und tanken neue Kraft. 
-            Wir nehmen uns ganz bewusst Zeit für uns, entdecken die Natur in der Stadt und genießen den Aufenthalt im Grünen.
+            Wobei kannst Du am besten entspannen? Magst Du es gern kreativ oder ist Dir eine enge Verbindung zur Natur wichtig? Es gibt eine ganze Menge Waldbaden-Übungen: Meditation und Atemübungen, Landart (Bilder aus Naturmaterialien legen), Qigong, Barfuß gehen, leichte Bewegungen, Sitzplatz und einen Baum umarmen (oder sagen wir, mal den Baumumfang vermessen ;-). Es gibt auch viele Utensilien, die man ausprobieren kann, wie z. B. Hängematte, Lupe, Spiegel und Diarahmen. Auch den Ort kannst Du wählen: in mehreren Wäldern rund um Braunschweig, im Gifhorner Eyßelwald oder im wunderschönen Ruhewald Ribbesbüttel biete ich Waldbaden an. 
             <br/><br/><span className="text-[#4D5E3D] font-bold text-[20px]">Besondere Momente mit Freunden und Freundinnen teilen</span><br/>
             Im hektischen Alltag bleibt oft zu wenig Zeit füreinander? Dabei sind gute Freunde doch so wichtig! Wie wäre es mit einem Geburtstag oder einem Nachmittag der besonderen Art? 
             Genieße zusammen mit Deinen Freundinnen und Freunden in aller Ruhe die Natur und erlebt intensive Momente in Gemeinschaft. 
@@ -26,11 +34,6 @@ export default function Course3Section() {
 
             <br/><br/><span className="text-[#4D5E3D] font-bold text-[20px]">Waldbaden für Unternehmen</span><br/>
             Achtsame Aufenthalte in der Natur stärken nachweislich das Immunsystem, reduzieren Stress, steigern das Wohlbefinden, stärken die Resilienz und wirken sich förderlich auf die Gesundheit aus. Ich konzipiere Veranstaltungen, die ich für Unternehmen im Rahmen des Betrieblichen Gesundheitsmanagements (BGM) mit bis zu zwölf Teilnehmern durchführe.
-
-            ​
-
-            <br/><br/><span className="text-[#4D5E3D] font-bold text-[20px]">Waldbaden mit der Familie</span><br/>
-            Waldbaden macht auch mit Kindern großen Spaß! Es gibt viele tolle kreative und spielerische Übungen, die Jung und Alt begeistern. Gern entwickle ich ein schönes Programm, passend für Deine Familie.
 
             ​
             <br/><br/>
@@ -46,7 +49,7 @@ export default function Course3Section() {
           href="/agb">
             AGB
         </Link>
-
+        </div>
         </section>    
 
     )
