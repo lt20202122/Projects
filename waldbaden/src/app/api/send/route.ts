@@ -12,13 +12,14 @@ export async function POST(req: NextRequest) {
       from: "christianeimwald@gmx.de",
       to: data.email,
       subject: "Danke für deine Anmeldung 🌿",
-      html: `<p>Hallo ${data.name},<br/>Wir haben deine Anmeldung erhalten! In wenigen Tagen wird dir mitgeteilt werden, ob ein Platz frei ist!</p>`,
+      html: `Vielen Dank für Deine Anmeldung zum Waldbaden. Ich schaue gleich, ob noch ein Platz frei ist und sende Dir dann die Rechnung. Mit Eingang der Überweisung ist Dein Platz fest reserviert. <br/>
+Christiane Thoroe`,
     });
 
     // Optional: E-Mail an dich selbst mit allen Daten
     await resend.emails.send({
       from: "christianeimwald@gmx.de",
-      to: data.email,
+      to: "christianeimwald@gmx.de",
       subject: `Neue Anmeldung von ${data.name}`,
       html: `
         Name: ${data.name} <br/>

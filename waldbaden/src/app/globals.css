@@ -35,6 +35,7 @@ img {
   --breakpoint-contact: 1000px;
   --breakpoint-certificates: 800px;
   --breakpoint-angebot: 700px;
+  --breakpoint-b:350px;
 }
 
 html, body {

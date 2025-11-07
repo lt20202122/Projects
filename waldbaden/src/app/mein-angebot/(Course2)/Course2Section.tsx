@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Course2Section() {
   return (
-    <section className={`md:px-[13vw] w-screen bg-[#ebecea]`}>
+    <section className={`w-screen bg-[#ebecea]`}>
       <div className="w-[75vw] h-[90vh] relative mx-auto mb-5 hidden md:block">
         <Image
         src="/wald9.webp"
@@ -12,7 +12,7 @@ export default function Course2Section() {
         className="object-contain"
         />
       </div>
-      <div className="w-full h-[40vh] relative my-10 mx-auto mb-10 block md:hidden">
+      <div className="w-full h-[43vh] relative mb-10 mx-0 block md:hidden">
         <Image
         src="/wald14MOBILE.webp"
         alt="Lichtung"
@@ -20,7 +20,7 @@ export default function Course2Section() {
         className="object-contain"
         />
       </div>
-      <div className="px-[13vw] md:px-0">
+      <div className="px-[5vw] md:px-[13vw]">
       <h2 className="text-[28px] text-[#5c7c3f] mb-2">Achtsam in den Feierabend</h2>
       <p className="text-[21px] mb-5">Waldbaden im Eyßelwald in Gifhorn
         <br/><br/>

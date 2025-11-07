@@ -2,8 +2,8 @@
 
 export default function Course1Section() {
   return (
-    <div className={`px-[13vw] mb-10`}>
-      <h2 className="text-[28px] text-[#5c7c3f] mb-2">Entspannte Auszeit im Wald</h2>
+    <div className={`md:px-[13vw] px-[5vw] mb-10`}>
+      <h2 className="text-[28px] text-[#5c7c3f] mb-2 whitespace-nowrap">Entspannte Auszeit <br className="block b:hidden"/>im Wald</h2>
       <p className="text-[20px]">Waldbaden im Ruhewald Ribbesbüttel
         <br/><br/>
         <span className="text-[#5c7c3f]">Lass Deinen Alltag hinter Dir und tauche ein in die beruhigende Atmosphäre des Waldes!</span> <br/>

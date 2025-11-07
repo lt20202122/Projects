@@ -9,7 +9,7 @@ interface CardProps {
 
 export default function Card({imageSrc, id}:CardProps) {
     return (
-        <div className="relative bg-white grid gap-0 justify-items-center hover:-translate-y-2 
+        <div className="relative bg-white grid gap-0 justify-items-center hover:-translate-y-2
             transition-all duration-300 hover:bg-[#eee] py-5 px-4 md:px-10">
             
             {/* Bild */}
@@ -23,7 +23,7 @@ export default function Card({imageSrc, id}:CardProps) {
             </div>
             
             {/* Titel */}
-            <h3 className="text-[#738D5C] text-2xl md:text-3xl leading-[1.3em] mb-2 text-center px-2">
+            <h3 className="text-[#738D5C] text-2xl md:text-3xl leading-[1.3em] mb-2 text-center px-2 ">
                 {Cards[id].title}
             </h3>
             
@@ -34,7 +34,7 @@ export default function Card({imageSrc, id}:CardProps) {
             </p>
             
             {/* Dates Section */}
-            <div className="w-full flex justify-center px-2">
+            <div className="w-full flex justify-center px-2 whitespace-nowrap">
                 {/* Desktop Version - mit fester Höhe */}
                 <p className="text-[#738B5E] text-lg font-medium leading-[1.66667em] mb-0 
                     h-[130px] hidden content2:block text-center">

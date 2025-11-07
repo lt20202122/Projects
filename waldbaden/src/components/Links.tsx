@@ -14,7 +14,7 @@ export default function Dropdown({ dropdownOpen, setDropdownOpen }: dropdownType
             `}
         >
             <Link href="/mein-angebot" className="text-white mb-2 mr-4 hover:text-[#d7e6d1] transition-colors duration-400" onClick={handleLinkClick}>
-                Termine
+                Termine & Preise
             </Link>
             <Link href="/kontakt" className="text-white mb-2 mr-4 hover:text-[#d7e6d1] transition-colors duration-400" onClick={handleLinkClick}>
                 Anmeldung

@@ -25,7 +25,7 @@ export default function Header() {
         <header className={`h-[90px] w-full flex items-center relative justify-between bg-[#4a6432] pr-8 ${playfair.className} font-medium`}>
             <div className='relative h-3/4 w-70'>
             <Image src="/logo.webp" alt="logo" fill
-            className="ml-8 cursor-pointer object-contain" onClick={()=>router.push("/")}/>
+            className="ml-2 cursor-pointer object-contain" onClick={()=>router.push("/")}/>
             </div>
             <Hamburger dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen} />
             <Links dropdownOpen={dropdownOpen} setDropdownOpen={setDropdownOpen} />

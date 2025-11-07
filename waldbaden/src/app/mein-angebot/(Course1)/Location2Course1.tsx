@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function LocationsCourse2() {
     return (
-        <div className={`min-w-screen relative px-[13vw]`}>
+        <div className={`min-w-screen relative md:px-[13vw] px-[5vw]`}>
             <h5 className={`text-main-light text-[22px] font-bold leading-[1.66667em] px-2 mb-3`}>
             Ruhewald Ribbesbüttel
             </h5>

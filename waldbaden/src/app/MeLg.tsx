@@ -20,6 +20,12 @@ export default function Me({playfair}:{playfair:any}) {
                 >
                     Mehr erfahren
                 </Link>
+                <Link 
+                    href="mailto:info@beispiel.de?subject=Anfrage%20Waldbaden"
+                    className="px-8 py-3 text-white border-2 border-white w-90 flex justify-center self-center hover:bg-white hover:text-[#9ab086] transition-colors text-xl"
+                >
+                    Schreib mir eine E-Mail
+                </Link>
             </div>
         </div>
     </div>

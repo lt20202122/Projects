@@ -8,9 +8,9 @@ export default function QuoteSectionMobile({playfair}:{playfair:any}) {
                     „Ich ging in die Wälder, weil ich bewusst leben wollte. Ich wollte das
                     Dasein auskosten. Ich wollte das Mark des Lebens einsaugen! Und alles
                     fortwerfen, das kein Leben barg, um nicht an meinem Todestag
-                    Innezuwerden, daß ich nie gelebt hatte."
+                    Innezuwerden, daß ich nie gelebt hatte.“
                     <footer className="italic mt-6">
-                        — Henry David Thoreau
+                        Henry David Thoreau
                     </footer>
                 </blockquote>
             </section>

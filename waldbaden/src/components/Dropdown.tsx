@@ -22,7 +22,7 @@ export default function Dropdown({dropdownOpen, setDropdownOpen}:dropdownType) {
                 Termine & Preise
             </Link>
             <Link href="/kontakt" className='mb-3 text-white hover:text-gray-200 transition-colors' onClick={handleLinkClick}>
-                Anmeldung & Kontakt
+                Anmeldung
             </Link>
             <Link href="/ueber/mich" className='text-white hover:text-gray-200 transition-colors mb-3' onClick={handleLinkClick}>
                 Über mich

@@ -20,7 +20,7 @@ export default function Course3Section() {
             className="object-contain"
             />
         </div>
-        <div className="px-[13vw] md:px-0">
+        <div className="px-[5vw] md:px-0">
         <h2 className="text-[28px] text-[#5c7c3f] mb-2 ">Dein persönliches Waldbad</h2>
         <p className="text-[21px] mb-5">Mit allen Sinnen achtsam im Wald </p>
         <p className="text-[18px]">

@@ -4,13 +4,13 @@ import Image from "next/image"
 export default function CertificatesMobile({ playfair }: { playfair: any }) {
     return (
         <div className="bg-[#9ab086] block md:hidden">
-        <div className={`flex flex-col  gap-6 ${playfair.className} text-white p-10 pt-[10vh]`}>
-            <div className="div1 text-[22px]">
+        <div className={`flex flex-col  gap-6 ${playfair.className} text-white py-10`}>
+            <div className="div1 text-[22px] px-[10vw]">
             Zertifizierte Kursleiterin für Waldbaden
             </div>
 
-            <div className="div2">
-            <div className="relative Certificate1Div">
+            <div className="div2 relative">
+            <div className="relative w-full h-[50vh]">
                 <Image
                 src="/Zertifikat1.webp"
                 alt="Zertifikat Kursleiterin Waldbaden"
@@ -21,7 +21,7 @@ export default function CertificatesMobile({ playfair }: { playfair: any }) {
             </div>
 
             <div className="div3">
-            <div className="relative Certificate2Div">
+            <div className="relative w-full h-[50vh]">
                 <Image
                 src="/Zertifikat2.webp"
                 alt="Zertifikat Kursleiterin Waldbaden"
@@ -32,7 +32,7 @@ export default function CertificatesMobile({ playfair }: { playfair: any }) {
             </div>
 
             <div className="div4">
-            <div className="relative Certificate3Div">
+            <div className="relative w-full h-[50vh]">
                 <Image
                 src="/Zertifikat3.webp"
                 alt="Zertifikat der 'Deutschen Akademie für Waldbaden und Gesundheit'"
@@ -42,7 +42,7 @@ export default function CertificatesMobile({ playfair }: { playfair: any }) {
             </div>
             </div>
 
-            <div className="div5 text-[22px]">Zertifizierte Naturmentorin</div>
+            <div className="div5 text-[22px] px-[10vw]">Zertifizierte Naturmentorin</div>
 
             <div className="div6 relative">
             <div className="relative h-full w-full">
