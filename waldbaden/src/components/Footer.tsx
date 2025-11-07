@@ -12,7 +12,7 @@ export default function Footer() {
           <Link href="/datenschutz">Datenschutz</Link>
           <Link href="/agb">AGB</Link>
           <div className="w-6 box-border h-6 relative overflow-hidden hover:cursor-pointer"
-          onClick={()=>window.location.href=""}>
+          onClick={()=>window.location.href="https://www.instagram.com/christianeimwald/"}>
             <Image 
             src="/instagram.svg"
             alt="instagram"

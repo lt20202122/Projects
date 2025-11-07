@@ -11,10 +11,10 @@ const playfair = Playfair_Display({
 export default function Datenschutz() {
   return (
     <main className={`px-[10vw] prose prose-neutral max-w-none text-[18px] ${playfair.className} leading-8 py-10 flex flex-col gap-2`}>
-      <h1 className="text-[28px]">Datenschutzerklärung</h1>
+      <h1 className="text-[28px] h1">Datenschutzerklärung</h1>
 
-      <h2 className="text-[22px]">1. Allgemeiner Hinweis und Pflichtinformationen</h2>
-      <h3>Benennung der verantwortlichen Stelle</h3>
+      <h2 className="text-[22px] h2">1. Allgemeiner Hinweis und Pflichtinformationen</h2>
+      <h3 className="h3">Benennung der verantwortlichen Stelle</h3>
       <p>
         Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
       </p>
@@ -38,8 +38,8 @@ export default function Datenschutz() {
 
       <hr />
 
-      <h2 className="text-[22px]">2. Ihre Rechte als betroffene Person</h2>
-      <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+      <h2 className="text-[22px] h2">2. Ihre Rechte als betroffene Person</h2>
+      <h3 className="h3">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
       <p>
         Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der Datenverarbeitung möglich.
         Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf
@@ -47,7 +47,7 @@ export default function Datenschutz() {
         Datenverarbeitung bleibt davon unberührt.
       </p>
 
-      <h3>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</h3>
+      <h3 className="h3">Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</h3>
       <p>
         Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist der
         Landesdatenschutzbeauftragte des Bundeslandes Niedersachsen:
@@ -72,7 +72,7 @@ export default function Datenschutz() {
         </a>
       </p>
 
-      <h3>Recht auf Datenübertragbarkeit</h3>
+      <h3 className="h3">Recht auf Datenübertragbarkeit</h3>
       <p>
         Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung
         eines Vertrags automatisiert verarbeiten, an sich oder an Dritte aushändigen zu lassen. Die
@@ -81,7 +81,7 @@ export default function Datenschutz() {
         machbar ist.
       </p>
 
-      <h3>Recht auf Auskunft, Berichtigung, Sperrung, Löschung</h3>
+      <h3 className="h3">Recht auf Auskunft, Berichtigung, Sperrung, Löschung</h3>
       <p>
         Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten
         personenbezogenen Daten, deren Herkunft, Empfänger und den Zweck der Verarbeitung sowie ggf.
@@ -101,7 +101,7 @@ export default function Datenschutz() {
       <hr />
 
       <h2 className="text-[22px]">4. Hosting und Content Delivery</h2>
-      <h3>Vercel</h3>
+      <h3 className="h3">Vercel</h3>
       <p>
         Diese Website wird gehostet bei <strong>Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA</strong>.
       </p>
@@ -131,13 +131,13 @@ export default function Datenschutz() {
       <hr />
 
       <h2 className="text-[22px]">5. Kontaktformular</h2>
-      <h3>Beschreibung und Umfang der Datenverarbeitung</h3>
+      <h3 className="h3">Beschreibung und Umfang der Datenverarbeitung</h3>
       <p>
         Wenn Sie das Kontaktformular nutzen, werden Name, E-Mail-Adresse, Nachrichtentext sowie
         Datum und Uhrzeit der Absendung verarbeitet.
       </p>
 
-      <h3>Versand über Resend</h3>
+      <h3 className="h3">Versand über Resend</h3>
       <p>
         Wir nutzen den Dienst <strong>Resend (Resend, Inc.)</strong> für den Versand. Die Daten
         werden ausschließlich zum Zweck der E-Mail-Zustellung genutzt und maximal 30 Tage gespeichert.
@@ -147,14 +147,14 @@ export default function Datenschutz() {
         </a>
       </p>
 
-      <h3>Rechtsgrundlage der Verarbeitung</h3>
+      <h3 className="h3">Rechtsgrundlage der Verarbeitung</h3>
       <ul>
         <li>Mit Einwilligung: Art. 6 Abs. 1 lit. a DSGVO</li>
         <li>Bei Vertragsanbahnung: Art. 6 Abs. 1 lit. b DSGVO</li>
         <li>Berechtigtes Interesse an Kommunikation: Art. 6 Abs. 1 lit. f DSGVO</li>
       </ul>
 
-      <h3>Zweck und Dauer der Speicherung</h3>
+      <h3 className="h3">Zweck und Dauer der Speicherung</h3>
       <p>
         Die Daten werden ausschließlich zur Bearbeitung der Anfrage genutzt und gelöscht, sobald sie
         nicht mehr erforderlich sind. Widerruf oder Widerspruch sind jederzeit per E-Mail möglich.

@@ -10,8 +10,8 @@ const playfair = Playfair_Display({
 export default function AGB() {
   return (
     <main className={`${playfair.className} px-[10vw] prose prose-neutral max-w-none text-[18px] w-screen flex flex-col gap-5`}>
-      <h1 className="text-[32px] self-center">AGB</h1>
-      <h2 className="text-[28px] self-center">Allgemeine Geschäftsbedingungen</h2>
+      <h1 className="text-[32px] self-center h1">AGB</h1>
+      <h2 className="text-[28px] self-center h2">Allgemeine Geschäftsbedingungen</h2>
 
       <p>
         Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Waldbaden-Angebote und sonstige
@@ -20,7 +20,7 @@ export default function AGB() {
         und verstanden zu haben.
       </p>
 
-      <h3 className="text-[22px]">1. Anmeldung zu Veranstaltungen</h3>
+      <h3 className="text-[22px] h3">1. Anmeldung zu Veranstaltungen</h3>
       <p>
         Die Anmeldung zu den Waldbaden-Veranstaltungen kann per E-Mail oder über das Kontaktformular
         verbindlich erfolgen. Sie kommt durch die Bestätigung der Kursleitung per E-Mail zustande.
@@ -28,7 +28,7 @@ export default function AGB() {
         Anmeldung geführt.
       </p>
 
-      <h3 className="text-[22px]">2. Bezahlung</h3>
+      <h3 className="text-[22px] h3">2. Bezahlung</h3>
       <ol>
         <li>
           Die Preise für die verschiedenen Formate sind auf der Website „waldbaden-mit-christiane“

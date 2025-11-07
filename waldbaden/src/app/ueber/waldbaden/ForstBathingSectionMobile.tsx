@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-export default function ForestBathingSection() {
+export default function ForestBathingSectionMobile() {
   return (
-  <section className="px-4 md:px-[15vw] flex-col hidden md:flex">
-    <div className="w-[65vw] h-[70vh] relative my-10 mb-10 hidden md:block">
+  <section className="px-4 flex flex-col md:hidden">
+    <div className="w-full h-[30vh] relative my-10 mb-10">
             <Image
             src="/wald15.webp"
             alt="Waldboden"
@@ -19,7 +19,7 @@ export default function ForestBathingSection() {
         Wir spüren unsere Verbindung zur Natur noch intensiver als bei einem Spaziergang, denn verschiedene Achtsamkeitsübungen helfen uns, das Gedankenkarussel anzuhalten 
         und uns zu entspannen. Wir genießen den Wald mit all unseren Sinnen und schöpfen neue Kraft.
     </p> <br/>
-    <div className="w-[65vw] h-[70vh] relative my-10 mb-10 hidden md:block">
+    <div className="w-full h-[30vh] relative my-10 mb-10">
             <Image
             src="/wald16.webp"
             alt="Moosbewachsener Baumstamm"
@@ -31,7 +31,7 @@ export default function ForestBathingSection() {
     <p className="text-[18px] leading-7">
         Wissenschaftliche Studien haben gezeigt, dass schon kurze Aufenthalte im Wald einen positiven Einfluss auf unsere körperliche und psychische Gesundheit haben können: Unser Immunsystem wird gestärkt, der Blutdruck reguliert, Stress reduziert, die Konzentration und das Gedächtnis werden verbessert. Außerdem kann die Resilienz gestärkt und Depressionen gelindert werden, der Schlaf und die Stimmung können verbessert werden. Diese und viele weitere positive Auswirkungen auf das Nerven-, Hormon- und Immunsystem konnten durch mehrere Studien belegt, sollten aber am besten selbst erlebt werden. 
     </p> <br/>
-    <div className="w-[65vw] h-[70vh] relative my-10 mb-10 hidden md:block">
+    <div className="w-full h-[30vh] relative my-10 mb-10">
             <Image
             src="/wald17.webp"
             alt="Moos im Wald"
@@ -43,7 +43,7 @@ export default function ForestBathingSection() {
     <p className="text-[18px] leading-7">
         Hast Du schon mal Moos gestreichelt? Es kann so richtig kuschelig weich sein. Und da sind wir schon beim typischen Klischee: Waldbaden ist Bäume umarmen! Naja, ich habe nichts dagegen, mich bei einem Baum anzulehnen und ihn auch zu umarmen, aber es gibt unzählige Waldbaden-Übungen: Meditation und Atemübungen, Landart (Bilder aus Naturmaterialien legen), Qigong, Tasten und Fühlen, Barfuß gehen, leichte Bewegungen, Staunen, Solozeit und vieles mehr. Es gibt auch viele Utensilien, die man ausprobieren kann, wie z. B. Hängematte, Lupe, Spiegel und Diarahmen. Ein paar Elemente des Waldbadens möchte ich Dir im Wald gerne zeigen.  
     </p> <br/>
-    <div className="w-[65vw] h-[70vh] relative my-10 mb-10 hidden md:block">
+    <div className="w-full h-[30vh] relative my-10 mb-10">
             <Image
             src="/wald18.webp"
             // FIXME:Was ist das?

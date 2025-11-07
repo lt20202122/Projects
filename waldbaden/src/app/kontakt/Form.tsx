@@ -33,7 +33,7 @@ export default function Form() {
 }
 
   return (
-    <section className="flex flex-col items-center gap-10 md:mb-0 mb-10">
+    <section className="flex flex-col items-center gap-10 mb-10">
       {!submitted ? (
         <>
           <h1 className="text-[45px] text-[#5c7c3f] text-center">

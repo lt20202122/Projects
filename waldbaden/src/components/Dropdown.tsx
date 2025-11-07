@@ -27,7 +27,7 @@ export default function Dropdown({dropdownOpen, setDropdownOpen}:dropdownType) {
             <Link href="/ueber/mich" className='text-white hover:text-gray-200 transition-colors mb-3' onClick={handleLinkClick}>
                 Über mich
             </Link>
-            <Link href="/ueber/mich" className='text-white hover:text-gray-200 transition-colors' onClick={handleLinkClick}>
+            <Link href="/ueber/waldbaden" className='text-white hover:text-gray-200 transition-colors' onClick={handleLinkClick}>
                 Über das Waldbaden
             </Link>
         </div>
