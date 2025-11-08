@@ -2,24 +2,23 @@ import './impressum.css'
 
 export default function Impressum() {
   return (
-    <main className='px-[10vw]'>
+    <main className='px-[10vw] md:px-[17vw] py-10'>
         <h1 className='h1'>Impressum</h1>
         <h2 className='h2'>Waldbaden mit Christiane</h2>
         <p>
-            Angaben gemäß § 5 TMG
-            Christiane Thoroe
-            Ahlerfeld 29
-            38527 Meine
+            Angaben gemäß § 5 TMG <br/>
+            Christiane Thoroe <br/>
+            Ahlerfeld 29 <br/>
+            38527 Meine <br/>
             <br /><br />
-            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-            Christiane Thoroe
-            Ahlerfeld 29
-            38527 Meine
-            E-Mail: christianeimwald@gmx.de
+            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: <br/>
+            Christiane Thoroe <br/>
+            Ahlerfeld 29 <br/>
+            38527 Meine <br/>
+            E-Mail: christianeimwald@gmx.de <br/>
             ​<br /><br />
-            Haftungsausschluss
 
-            <h3 className='h3'>Haftung für Inhalte</h3>
+            <h3 className='text-[22px] mb-2'>Haftung für Inhalte / Haftungsausschluss</h3>
 
             Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
 

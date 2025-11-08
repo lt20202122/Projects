@@ -26,7 +26,7 @@ const playfair = Playfair_Display({
 export default function AboutMe() {
   return (
     <main className={`text-[18px] flex flex-col ${playfair.className}`}>
-      <div className="bg-[#fafafa] px-4 md:px-[20vw] flex flex-col items-center pb-10">
+      <div className="px-4 md:px-[20vw] flex flex-col items-center pb-10">
         <h1 className="text-[38px] text-[#5c7c3f] font-bold py-5 text-center
           max-md:text-[28px]">
           Ich liebe es, <br /> im Wald zu sein!
@@ -59,7 +59,7 @@ export default function AboutMe() {
         </p>
       </div>
 
-      <p className="px-4 md:px-[10vw] py-10">
+      <p className="px-4 md:px-[17.5vw] py-10">
         Seit Herbst 2021 bin ich Kursleiterin für Waldbaden in den Wäldern rund um
         Braunschweig, Gifhorn und Umgebung. Ich biete Waldbaden in verschiedensten
         Formaten an, z. B. Einzel- und Paar-Waldbaden, offene Gruppen, Teamausflüge,
@@ -84,12 +84,12 @@ export default function AboutMe() {
         Im Frühjahr 2024 habe ich begonnen, Umweltwissenschaften an der Fernuniversität
         Hagen berufsbegleitend auf Master zu studieren. Ich finde es sehr spannend, die
         Themen Umwelt- und Naturschutz jetzt aus einer ganz anderen Perspektive zu
-        betrachten.
+        betrachten. Der interdisziplinäre Studiengang erlaubt es mir, genau die Bereiche auszuwählen, die mich am meisten interessieren, wie z. B. Umweltpsychologie und -politik. 
       </p>
 
       {/* 📸 Bildergalerie - Fullscreen Mobile */}
       <div className="w-full md:w-[70vw] flex flex-col md:flex-row gap-4 md:gap-0 mb-10 md:mx-auto">
-        <div className="relative h-[50vh] md:h-[40vh] w-full md:w-1/3 md:px-2">
+        <div className="relative h-[50vh] md:h-[46vh] w-full md:w-1/3 md:px-2">
           <Image 
             src="/wald21.webp" 
             alt="Ich mit Spiegel im Wald" 
@@ -97,7 +97,7 @@ export default function AboutMe() {
             className="object-cover md:object-contain" 
           />
         </div>
-        <div className="relative h-[50vh] md:h-[40vh] w-full md:w-1/3 md:px-2">
+        <div className="relative h-[50vh] md:h-[46vh] w-full md:w-1/3 md:px-2">
           <Image 
             src="/wald22.webp" 
             alt="Ich auf Waldboden" 
@@ -105,7 +105,7 @@ export default function AboutMe() {
             className="object-cover md:object-contain" 
           />
         </div>
-        <div className="relative h-[50vh] md:h-[40vh] w-full md:w-1/3 md:px-2">
+        <div className="relative h-[50vh] md:h-[46vh] w-full md:w-1/3 md:px-2">
           <Image 
             src="/wald23.webp" 
             alt="Ich in einer Hängematte im Wald" 
@@ -115,20 +115,28 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <h2 className="text-[38px] text-[#5c7c3f] font-bold py-5 text-center px-4
+      <h2 className="text-[32px] text-[#5c7c3f] font-bold py-5 text-center px-[17.5vw]
         max-md:text-[28px]">
         Wie ich zum Waldbaden gekommen bin
       </h2>
 
-      <p className="px-4 md:px-[10vw]">
-        Ich bin in meinem Alltag sehr gefordert: ich habe eine tolle Familie mit zwei Kindern,
-        einen Beruf, der mir viel Spaß macht, aber auch einiges abverlangt - und dann ist da ja
-        auch noch das bisschen Haushalt ;-)
-        <br /><br />
-        Lange habe ich nach einer Möglichkeit gesucht, um runterzukommen und mich zu entspannen.
-        Dabei habe ich vieles ausprobiert: Autogenes Training, Yoga, Laufen, Kraftsport,
-        Progressive Muskelentspannung und sogar Hypnose. Das tat mir auch sehr gut, aber wenn ich
-        richtig gestresst war, dann bin ich immer wieder im Wald gelandet...
+      <p className="px-4 md:px-[17.5vw]">
+        Ich bin in meinem Alltag sehr gefordert: ich habe eine tolle Familie mit zwei Kindern, einen Beruf, der mir viel Spaß macht, aber auch einiges abverlangt - und dann ist da ja auch noch das bisschen Haushalt ;-)
+
+<br/> <br />
+
+Lange habe ich nach einer Möglichkeit gesucht, um runterzukommen und mich zu entspannen. Dabei habe ich vieles ausprobiert: Autogenes Training, Yoga, Laufen, Kraftsport, Progressive Muskelentspannung und sogar Hypnose. Das tat mir auch sehr gut, aber wenn ich richtig gestresst war, dann bin ich immer wieder im Wald gelandet. Aber selbst dort war es nicht immer so leicht, das Gedankenkarussell zu stoppen. Irgendwann begriff ich: Körperlich durch den Wald zu gehen oder wirklich mit dem Herzen und allen Sinnen dort präsent zu sein – das ist nicht dasselbe.
+
+<br/> <br/>
+
+Ich habe also versucht, achtsam durch den Wald zu gehen. 
+Meine Strecken wurden mit der Zeit kürzer, aber meine Waldrunden dauerten immer länger. 
+Ich bin öfter stehen geblieben und habe mich lange umgeguckt. 
+Um die störenden Gedanken loszulassen, habe ich ab und zu ein paar Achtsamkeitsübungen gemacht oder einfach nur innegehalten. 
+Erst später habe ich erfahren, dass das, was mir so gut tut, Waldbaden heißt und ein echter Trend - nein - sogar eine richtige Bewegung ist! 
+Und dann wusste ich sofort: Das ist es! Das will ich richtig lernen und ich möchte, dass auch andere Menschen den Wald als Kraftort neu für sich entdecken. 
+Und so habe ich mich recht spontan bei der Deutschen Akademie für Waldbaden und Gesundheit angemeldet und in St. Martin eine Ausbildung zur Kursleiterin für Waldbaden 
+absolviert.
       </p>
 
       <span className="text-[#5c7c3f] text-center block w-full mt-10 mb-8 px-4 md:px-0">

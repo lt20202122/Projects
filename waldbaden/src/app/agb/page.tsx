@@ -9,7 +9,7 @@ const playfair = Playfair_Display({
 
 export default function AGB() {
   return (
-    <main className={`${playfair.className} px-[10vw] prose prose-neutral max-w-none text-[18px] w-screen flex flex-col gap-5`}>
+    <main className={`${playfair.className} md:px-[17vw] px-[10vw] prose prose-neutral max-w-none text-[18px] w-screen flex flex-col gap-5 py-10`}>
       <h1 className="text-[32px] self-center h1">AGB</h1>
       <h2 className="text-[28px] self-center h2">Allgemeine Geschäftsbedingungen</h2>
 

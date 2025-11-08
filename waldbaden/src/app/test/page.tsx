@@ -14,6 +14,12 @@ export default function ImageSlider() {
     { src: "/BZ.webp", alt: "Braunschweiger Zeitung" },
     { src: "/AZ.webp", alt: "Allerzeitung" }
   ];
+  const captions = [
+    {title: "Zertifizierung zur Naturmentorin", caption: "Abschluss der einjährigen Fortbildung mit Zertifikat am 5. Januar 2024", link: ""},
+    {title: "Kraftquelle Wald – Achtsamkeit und Naturverbindung für Körper und Geist", caption: "Vortrag bei der Veranstaltung 'Wald der Zukunft' der Universität Göttingen am 20. September 2025", linkName: "Zur Website der Uni Göttingen", linkHref:"https://www.uni-goettingen.de/de/690937.html"},
+    {title: "Megatrend in Braunschweig – Abtauchen in den Wald", caption: "Artikel der Wochenendausgabe der BZ vom 8. Juli 2023", linkName: "Zur Website der Uni Göttingen", linkHref:"https://www.uni-goettingen.de/de/690937.html"},
+    {title: "", caption: "", linkName: "", linkHref:""},
+  ]
 
   const goToSlide = (index:any) => {
     setCurrentSlide(index);

@@ -52,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className="scroll-smooth">
-      <body className="antialiased min-h-screen flex flex-col bg-white">
+      <body className={`antialiased min-h-screen flex flex-col bg-white ${playfair.className}`}>
         <Header />
         <main className="grow relative">
           {children}
