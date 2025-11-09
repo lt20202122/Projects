@@ -1,10 +1,12 @@
 "use client"
 import React, { useRef, useState, useEffect } from 'react';
-import { Canvas, useFrame, ThreeEvent } from '@react-three/fiber';
+import { Canvas, useFrame, ThreeEvent, useLoader } from '@react-three/fiber';
 import { PerspectiveCamera, Environment, RoundedBox } from '@react-three/drei';
 import * as THREE from 'three';
 
-interface DeviceProps {
+interface DeviceCardProps {
+  title: string;
+  description: string;
   websiteTexture: THREE.Texture;
   isTablet?: boolean;
 }
@@ -25,20 +27,18 @@ interface MousePosition {
   timestamp: number;
 }
 
-function Device({ websiteTexture, isTablet = false }: DeviceProps) {
+function Device({ websiteTexture, isTablet = false }: { websiteTexture: THREE.Texture; isTablet?: boolean }) {
   const groupRef = useRef<THREE.Group>(null);
   const [isDragging, setIsDragging] = useState(false);
-  const [rotation, setRotation] = useState<Rotation>({ x: 0.2, y: isTablet ? -0.3 : 0.3 });
+  const [rotation, setRotation] = useState<Rotation>({ x: 0.2, y: 0.3 });
   const [velocity, setVelocity] = useState<Velocity>({ x: 0, y: 0 });
   const mouseHistory = useRef<MousePosition[]>([]);
   const animationRef = useRef<number>(0);
 
-  // Dimensionen basierend auf Gerätetyp
   const dimensions = isTablet 
     ? { width: 2.4, height: 3.2, depth: 0.08, screenWidth: 2.32, screenHeight: 3.1 }
     : { width: 1.5, height: 3.2, depth: 0.08, screenWidth: 1.42, screenHeight: 3.1 };
 
-  // Idle Animation - langsames seitliches Drehen (in andere Richtung)
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isDragging && Math.abs(velocity.x) < 0.001 && Math.abs(velocity.y) < 0.001) {
@@ -60,7 +60,6 @@ function Device({ websiteTexture, isTablet = false }: DeviceProps) {
         y: prev.y * 0.92
       }));
     } else if (!isDragging) {
-      // Idle-Animation - nur seitlich, andere Richtung, langsamer
       const idleY = Math.sin(animationRef.current) * -0.0008;
       
       setRotation(prev => ({
@@ -96,7 +95,6 @@ function Device({ websiteTexture, isTablet = false }: DeviceProps) {
         mouseHistory.current.shift();
       }
 
-      // Immer die aktuelle Position mit der letzten vergleichen
       const lastHistoryPos = mouseHistory.current[mouseHistory.current.length - 2];
       if (lastHistoryPos) {
         const deltaX = e.clientX - lastHistoryPos.x;
@@ -146,7 +144,6 @@ function Device({ websiteTexture, isTablet = false }: DeviceProps) {
       onPointerUp={handlePointerUp}
       onPointerLeave={handlePointerUp}
     >
-      {/* Geräte Rahmen - abgerundet */}
       <RoundedBox 
         args={[dimensions.width, dimensions.height, dimensions.depth]} 
         radius={0.08}
@@ -163,7 +160,6 @@ function Device({ websiteTexture, isTablet = false }: DeviceProps) {
         />
       </RoundedBox>
 
-      {/* Bildschirm - bündig mit Rahmen */}
       <RoundedBox
         args={[dimensions.screenWidth, dimensions.screenHeight, 0.001]}
         radius={0.06}
@@ -181,7 +177,6 @@ function Device({ websiteTexture, isTablet = false }: DeviceProps) {
 
       {!isTablet && (
         <>
-          {/* Dynamic Island - modern und abgerundet */}
           <RoundedBox
             args={[0.25, 0.08, 0.015]}
             radius={0.04}
@@ -191,7 +186,6 @@ function Device({ websiteTexture, isTablet = false }: DeviceProps) {
             <meshStandardMaterial color="#000000" metalness={0.5} roughness={0.3} />
           </RoundedBox>
 
-          {/* Seitliche Buttons - abgerundet */}
           <RoundedBox
             args={[0.025, 0.35, 0.06]}
             radius={0.012}
@@ -221,59 +215,64 @@ function Device({ websiteTexture, isTablet = false }: DeviceProps) {
         </>
       )}
 
-      {/* Subtiler Glow */}
       <pointLight position={[0, 0, 1]} intensity={0.3} color="#667eea" distance={3} />
     </group>
   );
 }
 
-function Scene({ phoneTexture, tabletTexture, isMobile }: { phoneTexture: THREE.Texture; tabletTexture: THREE.Texture; isMobile: boolean }) {
+function Scene({ websiteTexture, isTablet }: { websiteTexture: THREE.Texture; isTablet: boolean }) {
   return (
     <>
-      <PerspectiveCamera makeDefault position={[0, 0, isMobile ? 6 : 8]} fov={50} />
-      
+      <PerspectiveCamera makeDefault position={[0, 0, 6]} fov={50} />
       <Environment preset="city" />
-      
       <ambientLight intensity={0.4} />
       <directionalLight position={[5, 5, 5]} intensity={0.8} castShadow />
       <directionalLight position={[-5, -5, -5]} intensity={0.3} />
       <spotLight position={[0, 10, 0]} intensity={0.5} angle={0.3} penumbra={1} color="#a78bfa" />
       
-      {isMobile ? (
-        // Nur Handy auf mobilen Geräten
-        <group position={[0, 0, 0]}>
-          <Device websiteTexture={phoneTexture} isTablet={false} />
-        </group>
-      ) : (
-        <>
-          {/* Handy links */}
-          <group position={[-2, 0, 0]}>
-            <Device websiteTexture={phoneTexture} isTablet={false} />
-          </group>
-
-          {/* Tablet rechts */}
-          <group position={[2.2, 0, 0]}>
-            <Device websiteTexture={tabletTexture} isTablet={true} />
-          </group>
-        </>
-      )}
+      <Device websiteTexture={websiteTexture} isTablet={isTablet} />
     </>
   );
 }
 
-export default function InteractivePhone3D() {
-  const [isMobile, setIsMobile] = useState(false);
+function DeviceCard({ title, description, websiteTexture, isTablet = false }: DeviceCardProps) {
+  return (
+    <div className="relative group">
+      <div className="relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 rounded-2xl shadow-xl overflow-hidden border border-purple-500/20 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20 hover:border-purple-500/40">
+        <div className="relative z-10 pt-4 px-5 pb-3">
+          <h3 className="text-xl font-bold text-white mb-1">
+            {title}
+          </h3>
+          <p className="text-sm text-purple-200/80">
+            {description}
+          </p>
+        </div>
+        
+        <div className="relative h-[400px] cursor-grab active:cursor-grabbing">
+          <Canvas shadows>
+            <Scene websiteTexture={websiteTexture} isTablet={isTablet} />
+          </Canvas>
+          
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
+        </div>
+        
+        <div className="relative z-10 px-5 pb-4 pt-2">
+          <div className="flex items-center justify-between text-xs text-purple-300/70">
+            <span className="flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
+              Interactive
+            </span>
+            <span className="opacity-60">
+              Drag to rotate
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 1024);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
+export default function InteractiveDeviceShowcase() {
   const createPlaceholderTexture = (isTablet: boolean): THREE.CanvasTexture => {
     const canvas = document.createElement('canvas');
     canvas.width = isTablet ? 768 : 512;
@@ -323,38 +322,25 @@ export default function InteractivePhone3D() {
   const phoneTexture = createPlaceholderTexture(false);
   const tabletTexture = createPlaceholderTexture(true);
 
+  // Optional: Eigene Screenshots laden
+  // const phoneTexture = useLoader(THREE.TextureLoader, '/phone-screenshot.png');
+  // const tabletTexture = useLoader(THREE.TextureLoader, '/tablet-screenshot.png');
+
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden border border-purple-500/20">
-        <div className="relative z-10 pt-6 sm:pt-8 px-4 sm:px-8 pb-3 sm:pb-4">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
-            Interactive Device Showcase
-          </h2>
-          <p className="text-sm sm:text-base text-purple-200">
-            Drag to explore • {isMobile ? 'Mobile view' : 'Mobile & Tablet views'}
-          </p>
-        </div>
-        
-        <div className="relative h-[500px] sm:h-[600px] lg:h-[700px] cursor-grab active:cursor-grabbing">
-          <Canvas shadows>
-            <Scene phoneTexture={phoneTexture} tabletTexture={tabletTexture} isMobile={isMobile} />
-          </Canvas>
-          
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-transparent pointer-events-none" />
-        </div>
-        
-        <div className="relative z-10 px-4 sm:px-8 pb-6 sm:pb-8 pt-3 sm:pt-4">
-          <div className="flex items-center justify-between text-xs sm:text-sm text-purple-300">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              Live Preview
-            </span>
-            <span className="opacity-70">
-              Built with Three.js
-            </span>
-          </div>
-        </div>
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
+      <DeviceCard
+        title="Mobile Experience"
+        description="Responsive design for smartphones"
+        websiteTexture={phoneTexture}
+        isTablet={false}
+      />
+      
+      <DeviceCard
+        title="Tablet Experience"
+        description="Optimized for larger screens"
+        websiteTexture={tabletTexture}
+        isTablet={true}
+      />
     </div>
   );
 }

@@ -3,9 +3,9 @@ import Image from "next/image"
 
 export default function CertificatesMobile({ playfair }: { playfair: any }) {
     return (
-        <div className="bg-[#9ab086] block md:hidden">
+        <div className="bg-[#9ab086] block certificates:hidden">
         <div className={`flex flex-col  gap-6 ${playfair.className} text-white py-10`}>
-            <div className="div1 text-[22px] px-[10vw]">
+            <div className="div1 text-[22px] px-[10vw] mx-auto">
             Zertifizierte Kursleiterin für Waldbaden
             </div>
 
@@ -42,7 +42,7 @@ export default function CertificatesMobile({ playfair }: { playfair: any }) {
             </div>
             </div>
 
-            <div className="div5 text-[22px] px-[10vw]">Zertifizierte Naturmentorin</div>
+            <div className="div5 text-[22px] px-[10vw] mx-auto">Zertifizierte Naturmentorin</div>
 
             <div className="div6 relative">
             <div className="relative h-full w-full">

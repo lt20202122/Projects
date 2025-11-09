@@ -23,7 +23,8 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "waldbaden-mit-christiane.de",
     locale: "de_DE",
-    type: "website", //MeSection page.tsx links
+    type: "website",
+    images: [{ url: "/og-about.jpg", width: 1200, height: 630 }] //TODO
   },
   
   twitter: {

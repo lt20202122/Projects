@@ -1,4 +1,28 @@
+import { Metadata } from 'next';
 import './impressum.css'
+
+export const metadata: Metadata = {
+  title: "Impressum – Waldbaden mit Christiane",
+  description:
+    "Impressum von waldbaden-mit-christiane.de – Informationen gemäß §5 TMG.",
+  openGraph: {
+    title: "Impressum – Waldbaden mit Christiane",
+    description:
+      "Impressum von waldbaden-mit-christiane.de – Informationen gemäß §5 TMG.",
+    images: ["/og-default.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Impressum – Waldbaden mit Christiane",
+    description:
+      "Impressum von waldbaden-mit-christiane.de – Informationen gemäß §5 TMG.",
+    images: ["/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://waldbaden-mit-christiane.de/impressum",
+  },
+};
+
 
 export default function Impressum() {
   return (

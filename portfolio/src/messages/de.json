@@ -1,0 +1,41 @@
+
+{
+    "Status": {
+    "Avaidable": "Verfügbar für Aufträge",
+    "Holiday": "Derzeit im Urlaub, zurück am ",
+    "NotAvaidable": "Derzeit <strong>nicht</strong> verfügbar. Erwartete Verfügbarkeit: "
+},
+    "Navbar": {
+        "Link3":"Projekte",
+        "Link4":"Kontakt"
+    },
+    "Homepage": {
+        "HeroSection":{
+            "title":"Herausstechen",
+            "subheading":"Mit der perfekten Website",
+            "CTA": "Projekte ansehen",
+            "CTA_Secoundary": "Kontaktieren"
+        },
+        "Section2": {
+            "h2": "Booste dein Unternehmen auf ein neues Level!",
+            "subheading": "Mit einer Website, die Top-Design und Funktionalität meisterhaft verbindet!",
+            "Card_1": {
+                "heading": "Responsive Webdesign",
+                "subheading" :"Websites, die auf allen Geräten perfekt funktionieren und aussehen"
+            },
+            "Card_2": {
+                "heading": "Benutzerfreundliche Interfaces",
+                "subheading" :"Intuitive Designs, die die Nutzererfahrung in den Mittelpunkt stellen."
+            },
+            "Card_3": {
+                "heading": "Individuelle Webentwicklung",
+                "subheading" :"Websites, die auf allen Geräten perfekt funktionieren und aussehenMaßgeschneiderte Lösungen, die ihre Geschäftsziele unterstützen."
+            },
+            "CTA": "Mehr erfahren",
+            "CTA_Secoundary": "Kontakt"
+        },
+        "Section3": {
+            
+        }
+    }
+}

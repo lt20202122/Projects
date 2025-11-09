@@ -1,6 +1,30 @@
 import { Playfair_Display } from "next/font/google";
 import './datenschutz.css'
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Datenschutz – Waldbaden mit Christiane",
+  description:
+    "Datenschutzerklärung gemäß DSGVO für waldbaden-mit-christiane.de.",
+  openGraph: {
+    title: "Datenschutz – Waldbaden mit Christiane",
+    description:
+      "Datenschutzerklärung gemäß DSGVO für waldbaden-mit-christiane.de.",
+    images: ["/og-default.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Datenschutz – Waldbaden mit Christiane",
+    description:
+      "Datenschutzerklärung gemäß DSGVO für waldbaden-mit-christiane.de.",
+    images: ["/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://waldbaden-mit-christiane.de/datenschutz",
+  },
+};
+
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "700"],

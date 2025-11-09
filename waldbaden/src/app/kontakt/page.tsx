@@ -3,14 +3,27 @@ import { Metadata } from "next";
 import Form from "./Form";
 
 export const metadata: Metadata = {
-  title: "Über mich", // Wird zu "Über mich | Waldbaden mit Christiane"
-  description: "Spezifische Beschreibung für diese Seite", //TODO
+  title: "Anmeldung – Waldbaden mit Christiane",
+  description:
+    "Jetzt Platz sichern: Anmeldung für Waldbaden-Auszeiten im Raum Braunschweig und Gifhorn.",
   openGraph: {
-    title: "Über mich",
-    description: "...", //TODO
-    images: [{ url: "/og-about.jpg", width: 1200, height: 630 }] //TODO
+    title: "Anmeldung – Waldbaden mit Christiane",
+    description:
+      "Jetzt Platz sichern: Anmeldung für Waldbaden-Auszeiten im Raum Braunschweig und Gifhorn.",
+    images: ["/og-default.jpg"],
   },
-}
+  twitter: {
+    card: "summary_large_image",
+    title: "Anmeldung – Waldbaden mit Christiane",
+    description:
+      "Jetzt Platz sichern: Anmeldung für Waldbaden-Auszeiten im Raum Braunschweig und Gifhorn.",
+    images: ["/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://waldbaden-mit-christiane.de/kontakt",
+  },
+};
+
 
 const playfair = Playfair_Display({
     subsets: ["latin"],

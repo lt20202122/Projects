@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+    --color-purple_heart: #8A2BE2;
+    --text-regular:16px;
+    --spacing-lg: 70px;
+    --spacing-md: 35px;
+    --color-dark_bg:#0D0300;
+}
+
+/* Ab Tablets */
+@media (min-width: 768px) {
+  @theme {
+    --spacing-lg: 140px;
+    --spacing-md: 70px;
+  }
+}
+
+/* 💻 Ab Laptop */
+@media (min-width: 1024px) {
+  @theme {
+    --spacing-lg: 160px;
+    --spacing-md: 80px;
+  }
+}
+
+.primaryBtn {
+  @apply inline-flex items-center justify-center
+    bg-purple_heart text-white font-medium
+    px-4 py-2 rounded-xl
+    shadow-sm transition-all duration-200
+    hover:bg-purple-700 hover:shadow-md
+    active:scale-95
+    focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2;
+}
+
+.inner-shadow {
+
+/* Heading/H1 */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 160px;
+line-height: 120%;
+/* identical to box height, or 192px */
+text-align: center;
+letter-spacing: -0.01em;
+
+color: #FF7C4C;
+
+text-shadow: 10px 15px 0px rgba(255, 124, 76, 0.1);
+}

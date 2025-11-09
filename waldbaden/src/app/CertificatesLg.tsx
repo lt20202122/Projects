@@ -3,10 +3,10 @@ import Image from "next/image"
 
 export default function CertificatesLg({ playfair }: { playfair: any }) {
   return (
-  <div className={`bg-[#4a6432ab] p-8 md:p-10 px-6 md:px-[10vw] hidden certificates:flex h-[70vh] items-center justify-between ${playfair.className}`}>
+  <div className={`bg-[#4a6432ab] pt-8 md:pt-10 px-6 md:px-[4vw] hidden certificates:flex h-[70vh] items-center justify-between ${playfair.className}`}>
         {/* Linke Spalte: Text oben, Akademie-Logo unten */}
         <div className="flex flex-col justify-between h-full py-8">
-          <p className="text-left text-white text-[28px] font-normal leading-9 whitespace-nowrap">
+          <p className="text-left text-white lg:text-[28px] font-normal leading-9 whitespace-nowrap md:text-[22px]">
             Zertifizierte <br />Kursleiterin <br />für Waldbaden
           </p>
           <div className="relative w-[180px] h-[180px]">
@@ -51,7 +51,7 @@ export default function CertificatesLg({ playfair }: { playfair: any }) {
 
         {/* Rechte Spalte: Text */}
         <div className="flex items-start h-full py-8">
-          <p className="text-right text-white text-[28px] font-normal leading-9">
+          <p className="text-right text-white text-[28px] font-normal leading-9 md:text-[22px]">
             Zertifizierte <br />Naturmentorin
           </p>
         </div>

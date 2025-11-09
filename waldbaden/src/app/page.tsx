@@ -9,17 +9,35 @@ const ContentStripe = dynamic(() => import("./CotentStripe"));
 const CoursesSection = dynamic(() => import("./CoursesSection"));
 const ProfileSection = dynamic(() => import("./ProfileSection"));
 
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Waldbaden mit Christiane", // Wird zu "Über mich | Waldbaden mit Christiane"
-  description: "Waldbaden in Braunschweig, Gifhorn & Umgebung – achtsam, entspannend, mit der Natur verbunden. Lass den Alltag hinter dir und finde Ruhe im Wald.",
-  openGraph: {
-    title: "Waldbaden mit Christiane",
-    description: "Waldbaden in Braunschweig, Gifhorn & Umgebung – achtsam, entspannend, mit der Natur verbunden. Lass den Alltag hinter dir und finde Ruhe im Wald.",
-    images: [{ url: "/wald6.webp", width: 1200, height: 630 }] //TODO
+  title: {
+    default: "Waldbaden mit Christiane – Gifhorn & Braunschweig",
+    template: "%s | Waldbaden mit Christiane",
   },
-}
+  description:
+    "Achtsamkeit in der Natur: Waldbaden in Braunschweig & Gifhorn. Gönn dir eine Auszeit vom Alltag!",
+  openGraph: {
+    title: "Waldbaden mit Christiane – Gifhorn & Braunschweig",
+    description:
+      "Achtsamkeit in der Natur: Waldbaden in Braunschweig & Gifhorn. Gönn dir eine Auszeit vom Alltag!",
+    images: ["/og-default.jpg"],
+    type: "website",
+    locale: "de_DE",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Waldbaden mit Christiane – Gifhorn & Braunschweig",
+    description:
+      "Achtsamkeit in der Natur: Waldbaden in Braunschweig & Gifhorn. Gönn dir eine Auszeit vom Alltag!",
+    images: ["/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://waldbaden-mit-christiane.de/",
+  },
+};
+
 
 const playfair = Playfair_Display({
   subsets: ["latin"],

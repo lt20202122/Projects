@@ -11,7 +11,7 @@ export default function Hamburger({dropdownOpen, setDropdownOpen}:dropdownType) 
     return (
         <>
             <button 
-                className="w-8 h-7 mr-1 flex flex-col justify-between cursor-pointer md:hidden z-50"
+                className="w-8 h-7 mr-1 flex flex-col justify-between cursor-pointer hamburger:hidden z-50"
                 onClick={() => {
                     setDropdownOpen(!dropdownOpen)
                     console.log("Dropdown opened/closed:", !dropdownOpen)

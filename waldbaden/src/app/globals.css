@@ -26,14 +26,14 @@ img {
   
   /* Breakpoints */
   --breakpoint-np: 500px;
-  --breakpoint-hamburger: 440px;
+  --breakpoint-hamburger: 850px;
   --breakpoint-a: 600px;
   --breakpoint-quote: 900px;
   --breakpoint-content1: 1050px;
   --breakpoint-content2: 700px;
   --breakpoint-profile1: 920px;
   --breakpoint-contact: 1000px;
-  --breakpoint-certificates: 800px;
+  --breakpoint-certificates: 900px;
   --breakpoint-angebot: 700px;
   --breakpoint-b:350px;
 }

@@ -7,6 +7,31 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AGB – Waldbaden mit Christiane",
+  description:
+    "Allgemeine Geschäftsbedingungen (AGB) von waldbaden-mit-christiane.de.",
+  openGraph: {
+    title: "AGB – Waldbaden mit Christiane",
+    description:
+      "Allgemeine Geschäftsbedingungen (AGB) von waldbaden-mit-christiane.de.",
+    images: ["/og-default.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AGB – Waldbaden mit Christiane",
+    description:
+      "Allgemeine Geschäftsbedingungen (AGB) von waldbaden-mit-christiane.de.",
+    images: ["/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://waldbaden-mit-christiane.de/agb",
+  },
+};
+
+
 export default function AGB() {
   return (
     <main className={`${playfair.className} md:px-[17vw] px-[10vw] prose prose-neutral max-w-none text-[18px] w-screen flex flex-col gap-5 py-10`}>

@@ -10,7 +10,7 @@ interface CardProps {
 export default function Card({imageSrc, id}:CardProps) {
     return (
         <div className="relative bg-white grid gap-0 justify-items-center hover:-translate-y-2
-            transition-all duration-300 hover:bg-[#eee] py-5 px-4 md:px-10">
+            transition-all duration-300 hover:bg-[#eee] py-5 xl:px-10">
             
             {/* Bild */}
             <div className="w-full max-w-[55vh] h-[55vh] relative mb-8">
@@ -28,8 +28,7 @@ export default function Card({imageSrc, id}:CardProps) {
             </h3>
             
             {/* Content */}
-            <p className="text-black text-lg md:text-xl leading-[1.8em] mb-2 
-                w-full md:w-auto content2:w-[60vw] text-center px-2">
+            <p className="text-black text-lg md:text-xl leading-[1.8em] mb-2 text-center px-2 inline">
                 {Cards[id].content}
             </p>
             

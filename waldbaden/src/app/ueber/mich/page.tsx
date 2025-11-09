@@ -6,14 +6,27 @@ import { Playfair_Display } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: "Über mich", // Wird zu "Über mich | Waldbaden mit Christiane"
-  description: "Spezifische Beschreibung für diese Seite", //TODO
+  title: "Über mich – Waldbaden mit Christiane",
+  description:
+    "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden & Naturmentorin. Komm mit mir in den Wald und tanke neue Kraft!",
   openGraph: {
-    title: "Über mich",
-    description: "...", //TODO
-    images: [{ url: "/og-about.jpg", width: 1200, height: 630 }] //TODO
+    title: "Über mich – Waldbaden mit Christiane",
+    description:
+      "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden & Naturmentorin. Komm mit mir in den Wald und tanke neue Kraft!",
+    images: ["/og-default.jpg"],
   },
-}
+  twitter: {
+    card: "summary_large_image",
+    title: "Über mich – Waldbaden mit Christiane",
+    description:
+      "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden & Naturmentorin. Komm mit mir in den Wald und tanke neue Kraft!",
+    images: ["/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://waldbaden-mit-christiane.de/ueber/mich",
+  },
+};
+
 
 const playfair = Playfair_Display({
     subsets: ["latin"],

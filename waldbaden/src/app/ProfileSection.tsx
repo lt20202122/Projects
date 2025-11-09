@@ -5,7 +5,7 @@ import CertificatesMobile from "./CertificatesMobile";
 
 export default function Profile({playfair}:{playfair:any}) {
     return (
-        <section className="flex flex-col gap-0 contact:gap-10">
+        <section className="flex flex-col gap-0 contact:gap-10 w-full">
             <MeLg playfair={playfair}/>
             <MeMobile playfair={playfair}/>
             <CertificatesLg playfair={playfair}/>

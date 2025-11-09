@@ -8,14 +8,27 @@ import { Metadata } from "next";
 import TipsSectionLg from "./TipsSectionLg";
 
 export const metadata: Metadata = {
-  title: "Mein Angebot", // Wird zu "Über mich | Waldbaden mit Christiane"
-  description: "Spezifische Beschreibung für diese Seite", //TODO
+  title: "Termine & Preise – Waldbaden mit Christiane",
+  description:
+    "Alle Waldbaden-Termine & Preise für Braunschweig und Umgebung im Überblick.",
   openGraph: {
-    title: "Über mich",
-    description: "...", //TODO
-    images: [{ url: "/og-about.jpg", width: 1200, height: 630 }] //TODO
+    title: "Termine & Preise – Waldbaden mit Christiane",
+    description:
+      "Alle Waldbaden-Termine & Preise für Braunschweig und Umgebung im Überblick.",
+    images: ["/og-default.jpg"],
   },
-}
+  twitter: {
+    card: "summary_large_image",
+    title: "Termine & Preise – Waldbaden mit Christiane",
+    description:
+      "Alle Waldbaden-Termine & Preise für Braunschweig und Umgebung im Überblick.",
+    images: ["/og-default.jpg"],
+  },
+  alternates: {
+    canonical: "https://waldbaden-mit-christiane.de/mein-angebot",
+  },
+};
+
 
 const playfair = Playfair_Display({
   subsets: ["latin"],

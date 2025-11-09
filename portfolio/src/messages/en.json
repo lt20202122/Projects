@@ -1,0 +1,40 @@
+{
+    "Status": {
+        "Avaidable": "Avaidable for hire",
+        "Holiday": "Currently on Holiday, will be back on the ",
+        "NotAvaidable": "Currently <strong>not<strong> avaidable. Expected Avaidabilitiy: "
+    },
+    "Navbar": {
+        "Link3":"Projects",
+        "Link4":"Contact"
+    },
+    "Homepage": {
+        "HeroSection":{
+            "title":"Scale.",
+            "subheading":"With perfektion and precision in one single site",
+            "CTA": "See products",
+            "CTA_Secoundary": "Contakt me!"
+        },
+        "Section2": {
+            "h2": "Reach entire new levels",
+            "subheading": "With a website combining functionality and design",
+            "Card_1": {
+                "heading": "Responsive webdesign",
+                "subheading" :"Websites looking perfect on all devices"
+            },
+            "Card_2": {
+                "heading": "Benutzerfreundliche Interfaces",
+                "subheading" :"Intuitive Designs, die die Nutzererfahrung in den Mittelpunkt stellen."
+            },
+            "Card_3": {
+                "heading": "Individuelle Webentwicklung",
+                "subheading" :"Websites, die auf allen Geräten perfekt funktionieren und aussehenMaßgeschneiderte Lösungen, die ihre Geschäftsziele unterstützen."
+            },
+            "CTA": "Mehr erfahren",
+            "CTA_Secoundary": "Kontakt"
+        },
+        "Section3": {
+            
+        }
+    }
+}

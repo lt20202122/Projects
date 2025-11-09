@@ -1,4 +1,3 @@
-- Tablet Optimierung
 - Resend
 - SEO-Texte
 - Bildergallerie
