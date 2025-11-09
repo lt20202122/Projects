@@ -3,6 +3,7 @@ import Link from "next/link";
 import CertificatesSection from "./CertificatesSection"
 import { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
+import ImageSlider from "./ImageSlider";
 
 
 export const metadata: Metadata = {
@@ -63,7 +64,7 @@ export default function AboutMe() {
         />
       </div>
 
-      <div className="bg-[#fafafa] px-4 md:px-[20vw] flex flex-col items-center pb-10">
+      <div className="px-4 md:px-[20vw] flex flex-col items-center pb-10">
         <h2 className="text-[28px] text-[#5c7c3f] text-center max-md:text-[22px]">
           Christiane Thoroe
         </h2>
@@ -166,7 +167,7 @@ absolviert.
         Kontakt aufnehmen
       </Link>
 
-      <CertificatesSection />
+      <ImageSlider />
     </main>
   );
 }

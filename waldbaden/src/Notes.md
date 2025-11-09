@@ -1,3 +1,2 @@
 - Resend
-- SEO-Texte
 - Bildergallerie
