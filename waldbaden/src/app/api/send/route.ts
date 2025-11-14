@@ -1,24 +1,15 @@
 import { NextRequest } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
 
-    // SMTP-Transporter für GMX
-    const transporter = nodemailer.createTransport({
-      host: "mail.gmx.net",
-      port: 587,
-      secure: false, // TLS wird automatisch bei Port 587 verwendet
-      auth: {
-        user: process.env.GMX_USER,
-        pass: process.env.GMX_PASS,
-      },
-    });
-
-    // 1️⃣ E-Mail an die Person, die sich angemeldet hat
-    await transporter.sendMail({
-      from: `"Christiane im Wald" <${process.env.GMX_USER}>`,
+    // 1️⃣ Bestätigungsmail an die Person
+    await resend.emails.send({
+      from: process.env.RESEND_FROM!,
       to: data.email,
       subject: "Danke für deine Anmeldung 🌿",
       html: `
@@ -30,10 +21,10 @@ export async function POST(req: NextRequest) {
       `,
     });
 
-    // 2️⃣ E-Mail an dich selbst mit allen Daten
-    await transporter.sendMail({
-      from: `"Neue Anmeldung" <${process.env.GMX_USER}>`,
-      to: process.env.GMX_USER,
+    // 2️⃣ Mail an dich selbst
+    await resend.emails.send({
+      from: process.env.RESEND_FROM!,
+      to: process.env.RESEND_FROM!,
       subject: `Neue Anmeldung von ${data.name}`,
       html: `
         <strong>Name:</strong> ${data.name} <br/>
@@ -47,12 +38,9 @@ export async function POST(req: NextRequest) {
       `,
     });
 
-    return new Response(JSON.stringify({ success: true }));
+    return Response.json({ success: true });
   } catch (error) {
-    console.error("Fehler beim Versenden:", error);
-    return new Response(
-      JSON.stringify({ success: false, error: String(error) }),
-      { status: 500 }
-    );
+    console.error("Resend Fehler:", error);
+    return Response.json({ success: false, error }, { status: 500 });
   }
 }
