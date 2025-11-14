@@ -1,2 +1,2 @@
-- Resend
-- Bildergallerie
+- Cookies
+- Datenschutz

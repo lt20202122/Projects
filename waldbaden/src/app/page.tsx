@@ -1,7 +1,6 @@
 import { Playfair_Display } from "next/font/google";
 import dynamic from "next/dynamic";
 import HeroSection from "./HeroSection";
-
 // dynamisch laden:
 const QuoteSectionLg = dynamic(() => import("./QuoteSectionLg"));
 const QuoteSectionMobile = dynamic(() => import("./QuoteSectionMobile"));
@@ -10,6 +9,7 @@ const CoursesSection = dynamic(() => import("./CoursesSection"));
 const ProfileSection = dynamic(() => import("./ProfileSection"));
 
 import type { Metadata } from "next";
+import CookieBot from "./CookieBot";
 
 export const metadata: Metadata = {
   title: {
@@ -50,6 +50,8 @@ export default function Home() {
   
 
   return (
+    <>
+    <CookieBot />
     <div className="flex flex-col items-center">
       <HeroSection playfair={playfair}/>
       <QuoteSectionLg playfair={playfair}/>
@@ -58,6 +60,7 @@ export default function Home() {
       <CoursesSection playfair={playfair}/>
       <ProfileSection playfair={playfair}/>
     </div>
+    </>
     
   );
 }
