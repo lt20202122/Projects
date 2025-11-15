@@ -102,3 +102,18 @@
     background-clip: text;
     color: transparent;
 }
+
+.tooltip-1 {
+    @apply relative;
+}
+
+.tooltip-1::before {
+    content: 'Gefällt dir meine Arbeit?';
+    @apply absolute -bottom-10 left-1/2 -translate-x-1/2
+    bg-black text-white text-xs px-2 py-1 rounded
+    opacity-0 pointer-events-none transition-opacity duration-200 delay-1000 z-10;
+}
+
+.tooltip-1:hover::before {
+    @apply opacity-100;
+}

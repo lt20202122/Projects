@@ -29,8 +29,9 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
   setRequestLocale(locale);
   return (
-    <html lang={locale} suppressHydrationWarning className="w-full">
-      <body className="bg-bg-dark text-text w-full">
+    <html lang={locale} suppressHydrationWarning className="w-full max-w-screen scroll-smooth relative">
+
+      <body className="bg-bg-dark text-text max-w-full">
         <NextIntlClientProvider>
           <AnimationProvider>
             <Navbar />

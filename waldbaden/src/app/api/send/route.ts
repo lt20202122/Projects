@@ -4,12 +4,15 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
+  console.log("Resend API key:", process.env.RESEND_API_KEY);
+  console.log("From:", process.env.RESEND_FROM);
+  
   try {
     const data = await req.json();
 
     // 1️⃣ Bestätigungsmail an die Person
-    await resend.emails.send({
-      from: process.env.RESEND_FROM!,
+    const confirmationEmail = await resend.emails.send({
+      from: process.env.RESEND_FROM!, // z.B. "Christiane <noreply@deine-domain.de>"
       to: data.email,
       subject: "Danke für deine Anmeldung 🌿",
       html: `
@@ -21,8 +24,10 @@ export async function POST(req: NextRequest) {
       `,
     });
 
+    console.log("Bestätigungsmail gesendet:", confirmationEmail);
+
     // 2️⃣ Mail an dich selbst
-    await resend.emails.send({
+    const notificationEmail = await resend.emails.send({
       from: process.env.RESEND_FROM!,
       to: process.env.RESEND_FROM!,
       subject: `Neue Anmeldung von ${data.name}`,
@@ -38,9 +43,14 @@ export async function POST(req: NextRequest) {
       `,
     });
 
+    console.log("Benachrichtigung gesendet:", notificationEmail);
+
     return Response.json({ success: true });
   } catch (error) {
     console.error("Resend Fehler:", error);
-    return Response.json({ success: false, error }, { status: 500 });
+    return Response.json(
+      { success: false, error: error instanceof Error ? error.message : "Unknown error" },
+      { status: 500 }
+    );
   }
 }
