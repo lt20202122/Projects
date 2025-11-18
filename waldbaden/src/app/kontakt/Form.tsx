@@ -155,7 +155,7 @@ export default function Form() {
               Absenden
             </button>
           </form>
-          <a href="mailto:info@beispiel.de?subject=Anfrage%20Waldbaden" className="text-[18px]">Weitere Anfragen? Sende mir eine E-Mail!</a>          
+          <a href="mailto:hallo@waldbaden-mit-christiane.de?subject=Anfrage%20Waldbaden" className="text-[18px]">Weitere Anfragen? Sende mir eine E-Mail!</a>          
         </>
       ) : (
         <div className="text-center flex flex-col items-center mt-20">

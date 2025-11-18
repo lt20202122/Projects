@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Waldbaden mit Christiane"
   },
   description: "Waldbaden in Braunschweig, Gifhorn & Umgebung – achtsam, entspannend, mit der Natur verbunden. Lass den Alltag hinter dir und finde Ruhe im Wald.",
-  keywords: ["Waldbaden", "Achtsamkeit", "Natur", "Waldbaden Braunschweig", "Waldbaden Niedersachsen", "Entspannung", "Stressmanagement", "Stressabbau", "Resilienz", "Entschleunigung"], // 10
+  keywords: ["Waldbaden", "Achtsamkeit", "Natur", "Waldbaden Braunschweig", "Waldbaden Niedersachsen", "Entspannung", "Stressmanagement", "Stressabbau", "Resilienz", "Entschleunigung", "Waldbaden in der Nähe"], // 10
   
   openGraph: {
     siteName: "waldbaden-mit-christiane.de",

@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = "localhost:3000" //TODO
+    const baseUrl = "waldbaden-mit-christiane.de"
     return {
         rules: {
             userAgent: "*",
