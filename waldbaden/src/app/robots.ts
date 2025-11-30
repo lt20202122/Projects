@@ -1,13 +1,13 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = "waldbaden-mit-christiane.de"
+    const baseUrl = "https://waldbaden-mit-christiane.de"
     return {
         rules: {
             userAgent: "*",
             allow: "/",
-            disallow:[""]
+            disallow: [""],
         },
-        sitemap: `${baseUrl}/sitemap.xml`
+        sitemap: `${baseUrl}/sitemap.xml`,
     }
 }
