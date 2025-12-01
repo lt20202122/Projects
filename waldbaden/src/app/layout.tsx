@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import Footer from "@/components/Footer";
 import "./globals.css";
 import { Playfair_Display } from "next/font/google";
+import JsonLd from "@/components/JsonLd";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     default: "Waldbaden mit Christiane - Gifhorn und Braunschweig",
     template: "%s | Waldbaden mit Christiane"
   },
-  description: "Waldbaden in Braunschweig, Gifhorn & Umgebung – achtsam, entspannend, mit der Natur verbunden. Lass den Alltag hinter dir und finde Ruhe im Wald.",
+  description: "Waldbaden in Braunschweig, Gifhorn und Umgebung – achtsam, entschleunigend und naturverbunden. Tauche ein, löse Stress, tanke Ruhe im Wald und erhole dich tief.",
   keywords: ["Waldbaden", "Achtsamkeit", "Natur", "Waldbaden Braunschweig", "Waldbaden Niedersachsen", "Entspannung", "Stressmanagement", "Stressabbau", "Resilienz", "Entschleunigung", "Waldbaden in der Nähe"], // 10
   
   openGraph: {
@@ -59,6 +60,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <JsonLd />
       </body>
     </html>
   );

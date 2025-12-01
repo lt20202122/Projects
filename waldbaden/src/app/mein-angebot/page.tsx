@@ -10,19 +10,19 @@ import TipsSectionLg from "./TipsSectionLg";
 export const metadata: Metadata = {
   title: "Termine & Preise – Waldbaden mit Christiane",
   description:
-    "Alle Waldbaden-Termine & Preise für Braunschweig und Umgebung im Überblick.",
+    "Alle Waldbaden-Termine und Preise für Braunschweig und Umgebung im Überblick – finde dein passendes Angebot, plane deine Auszeit und sichere dir jetzt deinen Platz.",
   openGraph: {
     title: "Termine & Preise – Waldbaden mit Christiane",
     description:
-      "Alle Waldbaden-Termine & Preise für Braunschweig und Umgebung im Überblick.",
-    images: ["/og-default.jpg"],
+      "Alle Waldbaden-Termine und Preise für Braunschweig und Umgebung im Überblick – finde dein passendes Angebot, plane deine Auszeit und sichere dir jetzt deinen Platz.",
+    images: ["/wald13.webp", "/wald13.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Termine & Preise – Waldbaden mit Christiane",
     description:
-      "Alle Waldbaden-Termine & Preise für Braunschweig und Umgebung im Überblick.",
-    images: ["/og-default.jpg"],
+      "Alle Waldbaden-Termine und Preise für Braunschweig und Umgebung im Überblick – finde dein passendes Angebot, plane deine Auszeit und sichere dir jetzt deinen Platz.",
+    images: ["/wald13.webp", "/wald13.jpg"],
   },
   alternates: {
     canonical: "https://waldbaden-mit-christiane.de/mein-angebot",

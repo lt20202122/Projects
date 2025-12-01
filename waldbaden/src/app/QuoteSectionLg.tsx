@@ -16,10 +16,11 @@ export default function QuoteSectionLg({playfair}:{playfair:any}) {
                 
                 <div className="relative aspect-4/3">
                     <img
-                        src="/wald2.webp"
-                        className="absolute inset-0 w-full h-full object-cover"
-                        alt="Wald im Nebel"
-                    />
+                            src="/wald2.webp"
+                            loading="lazy"
+                            className="absolute inset-0 w-full h-full object-cover"
+                            alt="Waldlichtung im Morgenlicht"
+                        />
                 </div>
         </div>
         </section>

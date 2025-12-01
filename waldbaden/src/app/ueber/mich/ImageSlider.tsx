@@ -7,7 +7,7 @@ export default function ImageSlider() {
   const slides = [
     {
       src: "/Zertifikat3.webp",
-      alt: "Zertifikat zur Naturmentorin",
+      alt: "Zertifikat – Naturmentorin",
       title: "Zertifizierung zur Naturmentorin",
       caption: "Abschluss der einjährigen Fortbildung mit Zertifikat am 5. Januar 2024",
       linkName: "",
@@ -15,7 +15,7 @@ export default function ImageSlider() {
     },
     {
       src: "/Vortrag.webp",
-      alt: "Vortrag an der Uni Göttingen",
+      alt: "Vortrag – Uni Göttingen",
       title: "Kraftquelle Wald – Achtsamkeit und Naturverbindung für Körper und Geist",
       caption: "Vortrag bei der Veranstaltung 'Wald der Zukunft' der Universität Göttingen am 20. September 2025",
       linkName: "Zur Website der Uni Göttingen",
@@ -89,6 +89,7 @@ export default function ImageSlider() {
                 <img
                   src={slide.src}
                   alt={slide.alt}
+                  loading="lazy"
                   className="max-w-full max-h-[50vh] object-contain mb-4"
                 />
                 {/* Caption */}

@@ -6,8 +6,9 @@ export default function ForestBathingSectionMobile() {
     <div className="w-full h-[30vh] relative my-10 mb-10">
             <Image
             src="/wald15.webp"
-            alt="Waldboden"
+            alt="Waldweg mit Abendlicht"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>
@@ -24,6 +25,7 @@ export default function ForestBathingSectionMobile() {
             src="/wald16.webp"
             alt="Moosbewachsener Baumstamm"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>
@@ -36,6 +38,7 @@ export default function ForestBathingSectionMobile() {
             src="/wald17.webp"
             alt="Moos im Wald"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>
@@ -49,6 +52,7 @@ export default function ForestBathingSectionMobile() {
             // FIXME:Was ist das?
             alt="Sonnenuntergang im Wald"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>

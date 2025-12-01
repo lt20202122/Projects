@@ -39,7 +39,7 @@ export default function Hero({ playfair }: { playfair: any }) {
         <div className="absolute inset-0">
             <Image
             src="/wald.webp"
-            alt="Wald"
+            alt="Waldweg mit Sonnenlicht"
             fill
             sizes="100vw"
             className="object-cover"

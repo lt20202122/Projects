@@ -16,10 +16,11 @@ export default function QuoteSectionMobile({playfair}:{playfair:any}) {
             </section>
             <section className="aspect-video relative">
                 <img 
-                    src="/wald2.webp" 
-                    alt="Wald im Nebel" 
-                    className="w-full h-full object-cover"
-                />
+                        src="/wald2.webp" 
+                        loading="lazy"
+                        alt="Waldlichtung im Morgenlicht" 
+                        className="w-full h-full object-cover"
+                    />
             </section>
         </div>
 

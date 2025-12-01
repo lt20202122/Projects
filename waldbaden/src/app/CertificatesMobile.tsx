@@ -13,7 +13,7 @@ export default function CertificatesMobile({ playfair }: { playfair: any }) {
             <div className="relative w-full h-[50vh]">
                 <Image
                 src="/Zertifikat1.webp"
-                alt="Zertifikat Kursleiterin Waldbaden"
+                alt="Zertifikat – Kursleiterin"
                 fill
                 className="object-contain certimg"
                 />
@@ -24,7 +24,7 @@ export default function CertificatesMobile({ playfair }: { playfair: any }) {
             <div className="relative w-full h-[50vh]">
                 <Image
                 src="/Zertifikat2.webp"
-                alt="Zertifikat Kursleiterin Waldbaden"
+                alt="Zertifikat – Kursabschluss"
                 fill
                 className="object-contain certimg"
                 />
@@ -35,7 +35,7 @@ export default function CertificatesMobile({ playfair }: { playfair: any }) {
             <div className="relative w-full h-[50vh]">
                 <Image
                 src="/Zertifikat3.webp"
-                alt="Zertifikat der 'Deutschen Akademie für Waldbaden und Gesundheit'"
+                alt="Zertifikat – Qualifikation Waldbaden"
                 fill
                 className="object-contain certimg"
                 />
@@ -48,7 +48,7 @@ export default function CertificatesMobile({ playfair }: { playfair: any }) {
             <div className="relative h-full w-full">
                 <Image
                 src="/Waldbadenakademie.png"
-                alt="Zertifikat zur Naturmentorin"
+                alt="Logo der Waldbadenakademie"
                 fill
                 className="object-contain"
                 />

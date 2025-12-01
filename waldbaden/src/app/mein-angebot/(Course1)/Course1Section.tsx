@@ -1,5 +1,7 @@
 
 
+import Link from "next/link";
+
 export default function Course1Section() {
   return (
     <div className={`md:px-[13vw] px-[5vw] mb-10`}>
@@ -7,9 +9,12 @@ export default function Course1Section() {
       <p className="text-[20px]">Waldbaden im Ruhewald Ribbesbüttel
         <br/><br/>
         <span className="text-[#5c7c3f]">Lass Deinen Alltag hinter Dir und tauche ein in die beruhigende Atmosphäre des Waldes!</span> <br/>
-        In einer kleinen Gruppe gehen wir in aller Ruhe auf Erkundungstour. Wir lassen uns Zeit zum Beobachten, Fühlen, Riechen, Hören und Staunen. 
-        Mit verschiedenen Achtsamkeitsübungen und kreativen, spielerischen Elementen machen wir unseren Kopf frei und entspannen uns. 
-        Wir spüren die Verbindung zur Natur und dadurch auch zu uns selbst. 
+        In einer kleinen Gruppe gehen wir in aller Ruhe auf Erkundungstour. Wir lassen uns Zeit zum Beobachten, Fühlen, Riechen, Hören und Staunen.
+        Mit verschiedenen Achtsamkeitsübungen und kreativen, spielerischen Elementen machen wir unseren Kopf frei und entspannen uns.
+        Wir spüren die Verbindung zur Natur und dadurch auch zu uns selbst.
+      </p>
+      <p className="text-[18px] mt-4">
+        Erfahre mehr über <Link href="/ueber/waldbaden" className="text-[#5c7c3f] underline hover:text-[#4D5E3D]">das Waldbaden</Link> oder entdecke unsere anderen Kurse weiter unten.
       </p>
     </div>
 

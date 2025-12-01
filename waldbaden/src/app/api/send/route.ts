@@ -1,15 +1,21 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
+import { checkBotId } from 'botid/server';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
-  console.log("Resend API key:", process.env.RESEND_API_KEY);
-  console.log("From:", process.env.RESEND_FROM);
+  const { isBot } = await checkBotId();
   
+  if (isBot) {
+    return NextResponse.json(
+      { error: 'Access denied' }, 
+      { status: 403 }
+    );
+  }
+
   try {
     const data = await req.json();
-
     // 1️⃣ Bestätigungsmail an die Person
     const confirmationEmail = await resend.emails.send({
       from: process.env.RESEND_FROM!, // z.B. "Christiane <noreply@deine-domain.de>"

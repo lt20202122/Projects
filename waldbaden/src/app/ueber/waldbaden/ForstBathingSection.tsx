@@ -6,8 +6,9 @@ export default function ForestBathingSection() {
     <div className="w-[65.5vw] h-[66vh] relative my-10 hidden md:block">
             <Image
             src="/wald15.webp"
-            alt="Waldboden"
+            alt="Waldweg mit Abendlicht"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>
@@ -24,6 +25,7 @@ export default function ForestBathingSection() {
             src="/wald16.webp"
             alt="Moosbewachsener Baumstamm"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>
@@ -36,6 +38,7 @@ export default function ForestBathingSection() {
             src="/wald17.webp"
             alt="Moos im Wald"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>
@@ -49,6 +52,7 @@ export default function ForestBathingSection() {
             // FIXME:Was ist das?
             alt="Sonnenuntergang im Wald"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>

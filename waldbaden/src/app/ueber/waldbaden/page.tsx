@@ -6,19 +6,19 @@ import { Playfair_Display } from "next/font/google";
 export const metadata: Metadata = {
   title: "Über das Waldbaden – Waldbaden mit Christiane",
   description:
-    "Was ist Waldbaden? Erfahre, wie achtsame Naturerlebnisse Stress reduzieren, deine Sinne stärken und zu mehr Ruhe führen.",
+    "Was ist Waldbaden? Erfahre, wie achtsame Naturerlebnisse Stress senken, deine Sinne schärfen und dir spürbar mehr Ruhe, Ausgeglichenheit und Wohlbefinden schenken.",
   openGraph: {
     title: "Über das Waldbaden – Waldbaden mit Christiane",
     description:
-      "Was ist Waldbaden? Erfahre, wie achtsame Naturerlebnisse Stress reduzieren, deine Sinne stärken und zu mehr Ruhe führen.",
-    images: ["/og-default.jpg"],
+      "Was ist Waldbaden? Erfahre, wie achtsame Naturerlebnisse Stress senken, deine Sinne schärfen und dir spürbar mehr Ruhe, Ausgeglichenheit und Wohlbefinden schenken.",
+    images: ["/wald16.webp", "/wald16.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Über das Waldbaden – Waldbaden mit Christiane",
     description:
-      "Was ist Waldbaden? Erfahre, wie achtsame Naturerlebnisse Stress reduzieren, deine Sinne stärken und zu mehr Ruhe führen.",
-    images: ["/og-default.jpg"],
+      "Was ist Waldbaden? Erfahre, wie achtsame Naturerlebnisse Stress senken, deine Sinne schärfen und dir spürbar mehr Ruhe, Ausgeglichenheit und Wohlbefinden schenken.",
+    images: ["/wald16.webp", "/wald16.jpg"],
   },
   alternates: {
     canonical: "https://waldbaden-mit-christiane.de/ueber/waldbaden",

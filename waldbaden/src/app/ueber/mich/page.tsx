@@ -9,19 +9,19 @@ import ImageSlider from "./ImageSlider";
 export const metadata: Metadata = {
   title: "Über mich – Waldbaden mit Christiane",
   description:
-    "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden & Naturmentorin. Komm mit mir in den Wald und tanke neue Kraft!",
+    "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden und Naturmentorin. Begleite mich in den Wald, finde neue Kraft, entdecke Achtsamkeit und starte deine Auszeit.",
   openGraph: {
     title: "Über mich – Waldbaden mit Christiane",
     description:
-      "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden & Naturmentorin. Komm mit mir in den Wald und tanke neue Kraft!",
-    images: ["/og-default.jpg"],
+      "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden und Naturmentorin. Begleite mich in den Wald, finde neue Kraft, entdecke Achtsamkeit und starte deine Auszeit.",
+    images: ["/wald20.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Über mich – Waldbaden mit Christiane",
     description:
-      "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden & Naturmentorin. Komm mit mir in den Wald und tanke neue Kraft!",
-    images: ["/og-default.jpg"],
+      "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden und Naturmentorin. Begleite mich in den Wald, finde neue Kraft, entdecke Achtsamkeit und starte deine Auszeit.",
+    images: ["/wald20.webp"],
   },
   alternates: {
     canonical: "https://waldbaden-mit-christiane.de/ueber/mich",
@@ -165,6 +165,15 @@ absolviert.
         href="/kontakt"
       >
         Kontakt aufnehmen
+      </Link>
+      <Link
+        className="text-[#4D5E3D] text-[22px] leading-[1.36em] border border-[#2e5f2d]
+          bg-white w-80 h-12 flex justify-center items-center hover:bg-[#9ab086]
+          transition-colors duration-300 mt-10 mx-auto hover:text-white mb-10
+          max-md:w-[80%] max-md:text-[18px]"
+        href="/mein-angebot"
+      >
+        Buche ein Waldbaden-Erlebnis
       </Link>
 
       <ImageSlider />

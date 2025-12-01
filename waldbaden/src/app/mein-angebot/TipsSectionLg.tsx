@@ -9,17 +9,19 @@ export default function TipsSection() {
         <div className="w-full angebot:w-1/2 h-[40vh] angebot:h-[70vh] relative">
           <Image 
             src="/wald12.webp"
-            alt="Ich im Wald"
+            alt="Waldszene mit moosbedecktem Boden"
             fill
-            className="object-contain"
+                loading="lazy"
+                className="object-contain"
           />
         </div>
         <div className="w-full angebot:w-1/2 h-[40vh] angebot:h-[70vh] relative">
           <Image 
             src="/wald13.webp"
-            alt="Pilz bei näherer Betrachtung"
+            alt="Nahaufnahme von Baumrinde und Laub"
             fill
-            className="object-contain"
+                loading="lazy"
+                className="object-contain"
           />
         </div>
       </div>

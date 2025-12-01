@@ -11,7 +11,7 @@ export default function CertificatesLg({ playfair }: { playfair: any }) {
           </p>
           <div className="relative w-[180px] h-[180px]">
             <Image 
-              alt="Waldbadenakademie"
+              alt="Logo der Waldbadenakademie"
               src="/Waldbadenakademie.png"
               fill
               className="object-contain"
@@ -21,32 +21,38 @@ export default function CertificatesLg({ playfair }: { playfair: any }) {
 
         {/* Zertifikat 1 */}
   <div className="relative h-[90%] w-full md:w-[22vw]">
-          <img
-            src="/Zertifikat1.webp"
-            alt="Zertifikat Kursleiterin"
-            className="w-[80%] h-[90%] border-4 relative border-gray-400 drop-shadow-2xl ml-14 cursor-pointer hover:-translate-y-2 transition-all duration-300"
-            onClick={() => window.open("/pdf/Zertifikat1.pdf", "_blank")}
-          />
+            <Image
+              src="/Zertifikat1.webp"
+              alt="Zertifikat – Kursleiterin"
+              fill
+              loading="lazy"
+              className="w-[80%] h-[90%] relative drop-shadow-2xl ml-14 cursor-pointer hover:-translate-y-2 transition-all duration-300 object-contain"
+              onClick={() => window.open("/pdf/Zertifikat1.pdf", "_blank")}
+            />
         </div>
 
         {/* Zertifikat 2 */}
   <div className="relative h-[90%] w-full md:w-[22vw] ml-7">
-          <img
-            src="/Zertifikat2.webp"
-            alt="Zertifikat Kursleiterin"
-            className="w-[78%] h-[84%] border-4 border-gray-400 drop-shadow-2xl cursor-pointer hover:-translate-y-2 transition-all duration-300"
-            onClick={() => window.open("/pdf/Zertifikat2.pdf", "_blank")}
-          />
+            <Image
+              src="/Zertifikat2.webp"
+              alt="Zertifikat – Kursabschluss"
+              fill
+              loading="lazy"
+              className="w-[78%] h-[84%] drop-shadow-2xl cursor-pointer hover:-translate-y-2 transition-all duration-300 object-contain"
+              onClick={() => window.open("/pdf/Zertifikat2.pdf", "_blank")}
+            />
         </div>
         
         {/* Zertifikat 3 */}
   <div className="relative h-[90%] w-full md:w-[22vw] ml-2">
-          <img
-            src="/Zertifikat3.webp"
-            alt="Zertifikat Kursleiterin"
-            className="w-[80%] h-[90%] border-4 border-gray-400 drop-shadow-2xl cursor-pointer hover:-translate-y-2 transition-all duration-300"
-            onClick={() => window.open("/pdf/Zertifikat3.pdf", "_blank")}
-          />
+            <Image
+              src="/Zertifikat3.webp"
+              alt="Zertifikat – Qualifikation Waldbaden"
+              fill
+              loading="lazy"
+              className="w-[80%] h-[90%]drop-shadow-2xl cursor-pointer hover:-translate-y-2 transition-all duration-300 object-contain"
+              onClick={() => window.open("/pdf/Zertifikat3.pdf", "_blank")}
+            />
         </div>
 
         {/* Rechte Spalte: Text */}

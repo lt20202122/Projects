@@ -3,13 +3,14 @@ import Link from "next/link";
 
 export default function Course2Section() {
   return (
-    <section className={`w-screen bg-[#ebecea]`}>
-      <div className="w-[75vw] h-[90vh] relative mx-auto mb-5 hidden md:block">
+    <section className={`w-full md:w-screen bg-[#ebecea]`}>
+      <div className="w-full md:w-[75vw] h-[90vh] relative mx-auto mb-5 hidden md:block">
         <Image
         src="/wald9.webp"
         alt="Lichtung"
         fill
         className="object-contain"
+        loading="lazy"
         />
       </div>
       <div className="w-full h-[43vh] relative mb-10 mx-0 block md:hidden">
@@ -18,9 +19,10 @@ export default function Course2Section() {
         alt="Lichtung"
         fill
         className="object-contain"
+        loading="lazy"
         />
       </div>
-      <div className="px-[5vw] md:px-[13vw]">
+      <div className="px-4 md:px-[13vw]">
       <h2 className="text-[28px] text-[#5c7c3f] mb-2">Achtsam in den Feierabend</h2>
       <p className="text-[21px] mb-5">Waldbaden im Eyßelwald in Gifhorn
         <br/><br/>
@@ -43,6 +45,9 @@ export default function Course2Section() {
                     href="/mein-angebot">
                         Anmeldung ab Februar 2026
         </Link>
+        <p className="text-[18px] mt-4">
+          Erfahre mehr über <Link href="/ueber/waldbaden" className="text-[#5c7c3f] underline hover:text-[#4D5E3D]">das Waldbaden</Link> oder entdecke unsere anderen Kurse weiter unten.
+        </p>
       </div>
       </div>
       

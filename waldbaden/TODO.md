@@ -1,0 +1,5 @@
+- [x] Add contact button in src/app/MeLg.tsx next to "Über mich" button
+- [x] Add links in src/app/mein-angebot/(Course1)/Course1Section.tsx to other courses and /ueber/waldbaden
+- [x] Add links in src/app/mein-angebot/(Course2)/Course2Section.tsx to other courses and /ueber/waldbaden
+- [x] Add links in src/app/mein-angebot/(Course3)/Course3Section.tsx to other courses and /ueber/waldbaden
+- [x] Add link to /mein-angebot in src/app/ueber/mich/page.tsx with "Buche ein Waldbaden-Erlebnis"

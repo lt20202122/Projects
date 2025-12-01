@@ -9,6 +9,7 @@ export default function Course3Section() {
             src="/wald10.webp"
             alt="Hängematte"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>
@@ -17,6 +18,7 @@ export default function Course3Section() {
             src="/wald10MOBILE.webp"
             alt="Hängematte"
             fill
+            loading="lazy"
             className="object-contain"
             />
         </div>
@@ -49,6 +51,9 @@ export default function Course3Section() {
           href="/agb">
             AGB
         </Link>
+        <p className="text-[18px] mt-4">
+          Erfahre mehr über <Link href="/ueber/waldbaden" className="text-[#5c7c3f] underline hover:text-[#4D5E3D]">das Waldbaden</Link> oder entdecke unsere anderen Kurse weiter oben.
+        </p>
         </div>
         </section>    
 

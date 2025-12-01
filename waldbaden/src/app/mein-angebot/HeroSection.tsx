@@ -7,8 +7,9 @@ export default function HeroSection() {
         <div className="w-screen md:w-[75vw] h-[30vh] md:h-[80vh] relative">
             <Image 
             src="/wald8.webp"
-            alt="Farn"
+            alt="Waldblick mit Farnen"
             fill
+            priority
             className="object-contain"
             />
         </div>

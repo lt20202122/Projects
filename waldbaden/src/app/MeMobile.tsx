@@ -6,7 +6,7 @@ export default function Me({playfair}:{playfair:any}) {
         <div className="flex flex-col gap-10 max-w-lg mx-auto px-4">
             <div className="w-full aspect-4/5 relative overflow-hidden">
                 <Image src="/wald6.webp" alt="Ich im Wald"
-                fill className="object-cover"></Image>
+                fill loading="lazy" className="object-cover"></Image>
             </div>
             <div className="px-4 text-center">
                 <h4 className={`${playfair.className} text-4xl`}>Christiane Thoroe</h4>

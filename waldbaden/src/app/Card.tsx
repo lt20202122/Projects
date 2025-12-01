@@ -16,8 +16,9 @@ export default function Card({imageSrc, id}:CardProps) {
             <div className="w-full max-w-[55vh] h-[55vh] relative mb-8">
                 <Image 
                     src={imageSrc} 
-                    alt={imageSrc}
+                    alt={typeof imageSrc === 'string' ? imageSrc.replace('/','').replace('.webp','').replace('.avif','') : 'Kursbild'}
                     fill 
+                    loading="lazy"
                     className="object-cover"
                 />
             </div>

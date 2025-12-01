@@ -15,8 +15,9 @@ export default function Footer() {
           onClick={()=>window.location.href="https://www.instagram.com/christianeimwald/"}>
             <Image 
             src="/instagram.svg"
-            alt="instagram"
+            alt="Instagram-Icon"
             fill
+            loading="lazy"
             />
           </div>
           <div className="w-6 h-6 relative hover:cursor-pointer"
@@ -25,8 +26,9 @@ export default function Footer() {
           }}>
             <Image
             src="/linkedin.svg"
-            alt="linkedin"
+            alt="LinkedIn-Icon"
             fill
+            loading="lazy"
             className="fill-white"
             />
           </div>

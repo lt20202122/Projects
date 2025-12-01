@@ -17,10 +17,10 @@ export default function CertificatesSection() {
               </p>
             </div>
             <div className="w-full lg:w-1/3 relative h-64 sm:h-80 lg:h-96">
-              <Image src="/Zertifikat3.webp" alt="Zertifikat zur Naturmentorin" fill className="object-contain" />
+              <Image src="/Zertifikat3.webp" alt="Zertifikat – Naturmentorin" fill loading="lazy" className="object-contain" />
             </div>
             <div className="w-full lg:w-1/3 relative h-64 sm:h-80 lg:h-96">
-              <Image src="/Zertifikat4.webp" alt="Teilnahmebescheinigung Wildniswind" fill className="object-contain" />
+              <Image src="/Zertifikat4.webp" alt="Teilnahmebescheinigung – Wildniswind" fill loading="lazy" className="object-contain" />
             </div>
           </div>
         </div>
@@ -51,6 +51,7 @@ export default function CertificatesSection() {
                 src="/Vortrag.webp"
                 alt="Vortrag an der Uni Göttingen"
                 fill
+                loading="lazy"
                 className="object-contain"
               />
             </div>
@@ -61,6 +62,7 @@ export default function CertificatesSection() {
                 src="/Uni-Goe.webp"
                 alt="Uni Göttingen"
                 fill
+                loading="lazy"
                 className="object-contain"
               />
             </div>
@@ -94,7 +96,7 @@ export default function CertificatesSection() {
               </a>
             </div>
             <div className="w-full lg:w-1/2 relative h-64 sm:h-80 lg:h-96 order-1 lg:order-2">
-              <Image src="/braun_zeit.webp" alt="Artikel Braunschweiger Zeitung" fill className="object-contain" />
+              <Image src="/braun_zeit.webp" alt="Artikel – Braunschweiger Zeitung" fill loading="lazy" className="object-contain" />
             </div>
           </div>
         </div>
@@ -118,7 +120,7 @@ export default function CertificatesSection() {
               </a>
             </div>
             <div className="w-full lg:w-1/2 relative h-64 sm:h-80 lg:h-96 order-1 lg:order-2">
-              <Image src="/bibl_meine.webp" alt="Bücherei Meine" fill className="object-contain" />
+              <Image src="/bibl_meine.webp" alt="Bücherei Meine – Veranstaltungsankündigung" fill loading="lazy" className="object-contain" />
             </div>
           </div>
         </div>
@@ -142,7 +144,7 @@ export default function CertificatesSection() {
               </a>
             </div>
             <div className="relative w-full h-64 sm:h-80 lg:h-96">
-              <Image src="/KVHS_Gifhorn.webp" alt="KVHS Gifhorn" fill className="object-contain" />
+              <Image src="/KVHS_Gifhorn.webp" alt="KVHS Gifhorn – Veranstaltungsankündigung" fill loading="lazy" className="object-contain" />
             </div>
           </div>
         </div>
@@ -153,7 +155,7 @@ export default function CertificatesSection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-12 lg:py-20">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
             <div className="w-full lg:w-1/2 relative h-64 sm:h-80 lg:h-96">
-              <Image src="/BZ.webp" alt="Braunschweiger Zeitung" fill className="object-contain" />
+              <Image src="/BZ.webp" alt="Braunschweiger Zeitung – Berichterstattung" fill loading="lazy" className="object-contain" />
             </div>
             <div className="w-full lg:w-1/2">
               <a
@@ -183,7 +185,7 @@ export default function CertificatesSection() {
               Allerzeitung vom 31. März 2022
             </a>
             <div className="relative w-full h-64 sm:h-80 lg:h-96">
-              <Image src="/AZ.webp" alt="Allerzeitung" fill className="object-contain" />
+              <Image src="/AZ.webp" alt="Allerzeitung – Berichterstattung" fill loading="lazy" className="object-contain" />
             </div>
             <a
               href="https://www.waz-online.de/lokales/gifhorn-lk/gifhorn/kreis-gifhorn-waldbaden-neuer-trend-christiane-thoroe-auch-im-ruhewald-aktiv-APNFICUJGGQHUKOBZL2MKACZZI.html"

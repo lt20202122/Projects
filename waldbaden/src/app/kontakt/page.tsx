@@ -5,19 +5,19 @@ import Form from "./Form";
 export const metadata: Metadata = {
   title: "Anmeldung – Waldbaden mit Christiane",
   description:
-    "Jetzt Platz sichern: Anmeldung für Waldbaden-Auszeiten im Raum Braunschweig und Gifhorn.",
+    "Jetzt Platz sichern und fürs Waldbaden im Raum Braunschweig und Gifhorn anmelden – schenke dir erholsame Naturmomente, reduziere Stress und starte deine Auszeit.",
   openGraph: {
     title: "Anmeldung – Waldbaden mit Christiane",
     description:
-      "Jetzt Platz sichern: Anmeldung für Waldbaden-Auszeiten im Raum Braunschweig und Gifhorn.",
-    images: ["/og-default.jpg"],
+      "Jetzt Platz sichern und fürs Waldbaden im Raum Braunschweig und Gifhorn anmelden – schenke dir erholsame Naturmomente, reduziere Stress und starte deine Auszeit.",
+    images: ["/wald5.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Anmeldung – Waldbaden mit Christiane",
     description:
-      "Jetzt Platz sichern: Anmeldung für Waldbaden-Auszeiten im Raum Braunschweig und Gifhorn.",
-    images: ["/og-default.jpg"],
+      "Jetzt Platz sichern und fürs Waldbaden im Raum Braunschweig und Gifhorn anmelden – schenke dir erholsame Naturmomente, reduziere Stress und starte deine Auszeit.",
+    images: ["/wald5.webp"],
   },
   alternates: {
     canonical: "https://waldbaden-mit-christiane.de/kontakt",
