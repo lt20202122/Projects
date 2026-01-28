@@ -7,20 +7,20 @@ import ImageSlider from "./ImageSlider";
 
 
 export const metadata: Metadata = {
-  title: "Über mich – Waldbaden mit Christiane",
+  title: "Über mich",
   description:
-    "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden und Naturmentorin. Begleite mich in den Wald, finde neue Kraft, entdecke Achtsamkeit und starte deine Auszeit.",
+    "Erfahre mehr über Christiane Thoroe, zertifizierte Kursleiterin für Waldbaden und Naturmentorin in Braunschweig und Gifhorn.",
   openGraph: {
-    title: "Über mich – Waldbaden mit Christiane",
+    title: "Über mich",
     description:
-      "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden und Naturmentorin. Begleite mich in den Wald, finde neue Kraft, entdecke Achtsamkeit und starte deine Auszeit.",
+      "Lerne Christiane Thoroe kennen – deine Begleiterin für achtsame Waldmomente in Braunschweig und Gifhorn.",
     images: ["/wald20.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Über mich – Waldbaden mit Christiane",
+    title: "Über mich",
     description:
-      "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden und Naturmentorin. Begleite mich in den Wald, finde neue Kraft, entdecke Achtsamkeit und starte deine Auszeit.",
+      "Christiane Thoroe – zertifizierte Kursleiterin für Waldbaden in Braunschweig und Gifhorn.",
     images: ["/wald20.webp"],
   },
   alternates: {
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
 
 
 const playfair = Playfair_Display({
-    subsets: ["latin"],
-    weight: ["400", "700"],
-    variable: "--font-playfair",
-    display: "swap",
-    });
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 
 export default function AboutMe() {
@@ -58,7 +58,7 @@ export default function AboutMe() {
       <div className="w-full h-[50vh] md:h-[55vh] md:w-[30vw] relative my-6 md:my-8 md:mx-auto">
         <Image
           src="/wald20.webp"
-          alt="Ich im Wald"
+          alt="Christiane Thoroe - Profilbild im Wald"
           fill
           className="object-cover md:object-contain"
         />
@@ -98,33 +98,33 @@ export default function AboutMe() {
         Im Frühjahr 2024 habe ich begonnen, Umweltwissenschaften an der Fernuniversität
         Hagen berufsbegleitend auf Master zu studieren. Ich finde es sehr spannend, die
         Themen Umwelt- und Naturschutz jetzt aus einer ganz anderen Perspektive zu
-        betrachten. Der interdisziplinäre Studiengang erlaubt es mir, genau die Bereiche auszuwählen, die mich am meisten interessieren, wie z. B. Umweltpsychologie und -politik. 
+        betrachten. Der interdisziplinäre Studiengang erlaubt es mir, genau die Bereiche auszuwählen, die mich am meisten interessieren, wie z. B. Umweltpsychologie und -politik.
       </p>
 
       {/* 📸 Bildergalerie - Fullscreen Mobile */}
       <div className="w-full md:w-[70vw] flex flex-col md:flex-row gap-4 md:gap-0 mb-10 md:mx-auto">
         <div className="relative h-[50vh] md:h-[46vh] w-full md:w-1/3 md:px-2">
-          <Image 
-            src="/wald21.webp" 
-            alt="Ich mit Spiegel im Wald" 
-            fill 
-            className="object-cover md:object-contain" 
+          <Image
+            src="/wald21.webp"
+            alt="Christiane Thoroe nutzt einen Spiegel für eine Achtsamkeitsübung im Wald"
+            fill
+            className="object-cover md:object-contain"
           />
         </div>
         <div className="relative h-[50vh] md:h-[46vh] w-full md:w-1/3 md:px-2">
-          <Image 
-            src="/wald22.webp" 
-            alt="Ich auf Waldboden" 
-            fill 
-            className="object-cover md:object-contain" 
+          <Image
+            src="/wald22.webp"
+            alt="Naturerlebnis: Christiane Thoroe auf dem Waldboden sitzend"
+            fill
+            className="object-cover md:object-contain"
           />
         </div>
         <div className="relative h-[50vh] md:h-[46vh] w-full md:w-1/3 md:px-2">
-          <Image 
-            src="/wald23.webp" 
-            alt="Ich in einer Hängematte im Wald" 
-            fill 
-            className="object-cover md:object-contain" 
+          <Image
+            src="/wald23.webp"
+            alt="Entspannung pur: Christiane Thoroe in einer Hängematte beim Waldbaden"
+            fill
+            className="object-cover md:object-contain"
           />
         </div>
       </div>
@@ -137,20 +137,20 @@ export default function AboutMe() {
       <p className="px-4 md:px-[17.5vw]">
         Ich bin in meinem Alltag sehr gefordert: ich habe eine tolle Familie mit zwei Kindern, einen Beruf, der mir viel Spaß macht, aber auch einiges abverlangt - und dann ist da ja auch noch das bisschen Haushalt ;-)
 
-<br/> <br />
+        <br /> <br />
 
-Lange habe ich nach einer Möglichkeit gesucht, um runterzukommen und mich zu entspannen. Dabei habe ich vieles ausprobiert: Autogenes Training, Yoga, Laufen, Kraftsport, Progressive Muskelentspannung und sogar Hypnose. Das tat mir auch sehr gut, aber wenn ich richtig gestresst war, dann bin ich immer wieder im Wald gelandet. Aber selbst dort war es nicht immer so leicht, das Gedankenkarussell zu stoppen. Irgendwann begriff ich: Körperlich durch den Wald zu gehen oder wirklich mit dem Herzen und allen Sinnen dort präsent zu sein – das ist nicht dasselbe.
+        Lange habe ich nach einer Möglichkeit gesucht, um runterzukommen und mich zu entspannen. Dabei habe ich vieles ausprobiert: Autogenes Training, Yoga, Laufen, Kraftsport, Progressive Muskelentspannung und sogar Hypnose. Das tat mir auch sehr gut, aber wenn ich richtig gestresst war, dann bin ich immer wieder im Wald gelandet. Aber selbst dort war es nicht immer so leicht, das Gedankenkarussell zu stoppen. Irgendwann begriff ich: Körperlich durch den Wald zu gehen oder wirklich mit dem Herzen und allen Sinnen dort präsent zu sein – das ist nicht dasselbe.
 
-<br/> <br/>
+        <br /> <br />
 
-Ich habe also versucht, achtsam durch den Wald zu gehen. 
-Meine Strecken wurden mit der Zeit kürzer, aber meine Waldrunden dauerten immer länger. 
-Ich bin öfter stehen geblieben und habe mich lange umgeguckt. 
-Um die störenden Gedanken loszulassen, habe ich ab und zu ein paar Achtsamkeitsübungen gemacht oder einfach nur innegehalten. 
-Erst später habe ich erfahren, dass das, was mir so gut tut, Waldbaden heißt und ein echter Trend - nein - sogar eine richtige Bewegung ist! 
-Und dann wusste ich sofort: Das ist es! Das will ich richtig lernen und ich möchte, dass auch andere Menschen den Wald als Kraftort neu für sich entdecken. 
-Und so habe ich mich recht spontan bei der Deutschen Akademie für Waldbaden und Gesundheit angemeldet und in St. Martin eine Ausbildung zur Kursleiterin für Waldbaden 
-absolviert.
+        Ich habe also versucht, achtsam durch den Wald zu gehen.
+        Meine Strecken wurden mit der Zeit kürzer, aber meine Waldrunden dauerten immer länger.
+        Ich bin öfter stehen geblieben und habe mich lange umgeguckt.
+        Um die störenden Gedanken loszulassen, habe ich ab und zu ein paar Achtsamkeitsübungen gemacht oder einfach nur innegehalten.
+        Erst später habe ich erfahren, dass das, was mir so gut tut, Waldbaden heißt und ein echter Trend - nein - sogar eine richtige Bewegung ist!
+        Und dann wusste ich sofort: Das ist es! Das will ich richtig lernen und ich möchte, dass auch andere Menschen den Wald als Kraftort neu für sich entdecken.
+        Und so habe ich mich recht spontan bei der Deutschen Akademie für Waldbaden und Gesundheit angemeldet und in St. Martin eine Ausbildung zur Kursleiterin für Waldbaden
+        absolviert.
       </p>
 
       <span className="text-[#5c7c3f] text-center block w-full mt-10 mb-8 px-4 md:px-0">

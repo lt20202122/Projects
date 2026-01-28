@@ -14,37 +14,40 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Waldbaden mit Christiane - Gifhorn und Braunschweig",
+    default: "Waldbaden mit Christiane - Gifhorn, Braunschweig & Umgebung",
     template: "%s | Waldbaden mit Christiane"
   },
-  description: "Waldbaden in Braunschweig, Gifhorn und Umgebung – achtsam, entschleunigend und naturverbunden. Tauche ein, löse Stress, tanke Ruhe im Wald und erhole dich tief.",
-  keywords: ["Waldbaden", "Achtsamkeit", "Natur", "Waldbaden Braunschweig", "Waldbaden Niedersachsen", "Entspannung", "Stressmanagement", "Stressabbau", "Resilienz", "Entschleunigung", "Waldbaden in der Nähe"], // 10
-  
+  description: "Entdecke Waldbaden in Gifhorn und Braunschweig mit Christiane Thoroe. Achtsamkeit, Stressbewältigung und Naturerlebnisse für mehr Entspannung und Resilienz.",
+  keywords: ["Waldbaden", "Achtsamkeit", "Naturerlebnis", "Braunschweig", "Gifhorn", "Niedersachsen", "Entspannung", "Stressmanagement", "Stressabbau", "Resilienz", "Entschleunigung", "Shinrin-yoku", "Gesundheit", "Prävention"],
+
   openGraph: {
-    siteName: "waldbaden-mit-christiane.de",
+    siteName: "Waldbaden mit Christiane",
     locale: "de_DE",
     type: "website",
-    images: [{ url: "/og-about.jpg", width: 1200, height: 630 }] //TODO
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630 }]
   },
-  
+
   twitter: {
     card: "summary_large_image",
-    // NICHT hier: title, description, images (seitenspezifisch)
+    title: "Waldbaden mit Christiane - Gifhorn, Braunschweig & Umgebung",
+    description: "Achtsamkeit und Entspannung in der Natur. Erlebe Waldbaden in Braunschweig und Gifhorn.",
+    images: ["/og-default.jpg"],
   },
-  
+
   robots: {
     index: true,
     follow: true,
-    nocache: false,
     googleBot: {
       index: true,
       follow: true,
-      nocache: false,
       "max-snippet": -1,
       "max-image-preview": "large",
       "max-video-preview": -1,
     }
-  }
+  },
+  alternates: {
+    canonical: "https://waldbaden-mit-christiane.de/",
+  },
 }
 
 export default function RootLayout({

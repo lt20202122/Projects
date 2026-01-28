@@ -11,27 +11,22 @@ const ProfileSection = dynamic(() => import("./ProfileSection"));
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Waldbaden mit Christiane – Gifhorn & Braunschweig",
-    template: "%s | Waldbaden mit Christiane",
-  },
+  title: "Achtsamkeit & Naturerlebnis",
   description:
-    "Achtsamkeit in der Natur: Waldbaden in Braunschweig und Gifhorn. Gönn dir eine erholsame Auszeit, tanke Ruhe, spüre Entschleunigung und buche jetzt dein Naturerlebnis.",
+    "Erlebe Waldbaden in Braunschweig und Gifhorn. Christiane Thoroe bietet achtsame Naturführungen, Stressprävention und Entspannung im Wald. Jetzt Termin buchen!",
   openGraph: {
-
-
-    title: "Waldbaden mit Christiane – Gifhorn & Braunschweig",
+    title: "Waldbaden mit Christiane - Achtsamkeit & Naturerlebnis",
     description:
-"Achtsamkeit in der Natur: Waldbaden in Braunschweig und Gifhorn. Gönn dir eine erholsame Auszeit, tanke Ruhe, spüre Entschleunigung und buche jetzt dein Naturerlebnis.",
+      "Gönn dir eine Auszeit im Wald. Waldbaden in Braunschweig und Gifhorn für mehr Ruhe und Gelassenheit.",
     images: ["/wald.webp"],
     type: "website",
     locale: "de_DE",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Waldbaden mit Christiane – Gifhorn & Braunschweig",
+    title: "Waldbaden mit Christiane - Achtsamkeit & Naturerlebnis",
     description:
-"Achtsamkeit in der Natur: Waldbaden in Braunschweig und Gifhorn. Gönn dir eine erholsame Auszeit, tanke Ruhe, spüre Entschleunigung und buche jetzt dein Naturerlebnis.",
+      "Erlebe die heilende Kraft des Waldes. Waldbaden-Kurse in Gifhorn und Braunschweig.",
     images: ["/wald.webp"],
   },
   alternates: {
@@ -51,12 +46,12 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <HeroSection playfair={playfair}/>
-        <QuoteSectionLg playfair={playfair}/>
-        <QuoteSectionMobile playfair={playfair}/>
-        <ContentStripe playfair={playfair}/>
-        <CoursesSection playfair={playfair}/>
-        <ProfileSection playfair={playfair}/>
+        <HeroSection playfair={playfair} />
+        <QuoteSectionLg playfair={playfair} />
+        <QuoteSectionMobile playfair={playfair} />
+        <ContentStripe playfair={playfair} />
+        <CoursesSection playfair={playfair} />
+        <ProfileSection playfair={playfair} />
       </div>
     </>
   );

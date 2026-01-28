@@ -7,30 +7,30 @@ export default function Form() {
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault()
+    e.preventDefault()
 
-  // FormData in ein normales Objekt umwandeln
-  const formData = new FormData(e.currentTarget)
-  const data = Object.fromEntries(formData)
+    // FormData in ein normales Objekt umwandeln
+    const formData = new FormData(e.currentTarget)
+    const data = Object.fromEntries(formData)
 
-  try {
-    // API aufrufen
-    const res = await fetch("/api/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    })
+    try {
+      // API aufrufen
+      const res = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
 
-    if (res.ok) {
-      setSubmitted(true)
-    } else {
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        alert("Fehler beim Versenden der E-Mail")
+      }
+    } catch (err) {
+      console.error(err)
       alert("Fehler beim Versenden der E-Mail")
     }
-  } catch (err) {
-    console.error(err)
-    alert("Fehler beim Versenden der E-Mail")
   }
-}
 
   return (
     <section className="flex flex-col items-center gap-10 mb-10">
@@ -44,10 +44,10 @@ export default function Form() {
             onSubmit={handleSubmit}
             className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-[80vw] max-w-[700px]"
             onKeyDown={(e) => {
-            if (e.key === "Enter" && e.target instanceof HTMLInputElement) {
-              e.preventDefault();
-            }
-          }}
+              if (e.key === "Enter" && e.target instanceof HTMLInputElement) {
+                e.preventDefault();
+              }
+            }}
           >
             <label className="flex flex-col">
               Termin auswählen *
@@ -60,9 +60,9 @@ export default function Form() {
                 <option value="" disabled hidden>
                   Termin auswählen
                 </option>
-                <option value="1">Es stehen bis jetzt keine Daten fest</option>
-                <option value="2">Termine für 2026 hier ab Februar</option>
-                <option value="2">Dein persönliches Waldbad</option>
+                <option value="Mai">31. Mai 2026</option>
+                <option value="September">27. September 2026</option>
+                <option value="individuell">Dein persönliches Waldbad</option>
               </select>
             </label>
 
@@ -155,7 +155,7 @@ export default function Form() {
               Absenden
             </button>
           </form>
-          <a href="mailto:hallo@waldbaden-mit-christiane.de?subject=Anfrage%20Waldbaden" className="text-[18px]">Weitere Anfragen? Sende mir eine E-Mail!</a>          
+          <a href="mailto:hallo@waldbaden-mit-christiane.de?subject=Anfrage%20Waldbaden" className="text-[18px]">Weitere Anfragen? Sende mir eine E-Mail!</a>
         </>
       ) : (
         <div className="text-center flex flex-col items-center mt-20">

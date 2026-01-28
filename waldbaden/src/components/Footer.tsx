@@ -6,34 +6,34 @@ import Image from "next/image"
 export default function Footer() {
   return (
     <section className="bg-[#4a6432] text-white flex flex-col items-center pt-5 gap-2 pb-5">
-        <p>&copy;2025 Waldbaden mit Christiane</p>
-        <div className="flex gap-5">
-          <Link href="/impressum">Impressum</Link>
-          <Link href="/datenschutz">Datenschutz</Link>
-          <Link href="/agb">AGB</Link>
-          <div className="w-6 box-border h-6 relative overflow-hidden hover:cursor-pointer"
-          onClick={()=>window.location.href="https://www.instagram.com/christianeimwald/"}>
-            <Image 
+      <p>&copy;2026 Waldbaden mit Christiane</p>
+      <div className="flex gap-5">
+        <Link href="/impressum">Impressum</Link>
+        <Link href="/datenschutz">Datenschutz</Link>
+        <Link href="/agb">AGB</Link>
+        <div className="w-6 box-border h-6 relative overflow-hidden hover:cursor-pointer"
+          onClick={() => window.location.href = "https://www.instagram.com/christianeimwald/"}>
+          <Image
             src="/instagram.svg"
             alt="Instagram-Icon"
             fill
             loading="lazy"
-            />
-          </div>
-          <div className="w-6 h-6 relative hover:cursor-pointer"
-          onClick={()=>{
+          />
+        </div>
+        <div className="w-6 h-6 relative hover:cursor-pointer"
+          onClick={() => {
             window.location.href = "https://www.linkedin.com/in/christiane-thoroe-90477023a"
           }}>
-            <Image
+          <Image
             src="/linkedin.svg"
             alt="LinkedIn-Icon"
             fill
             loading="lazy"
             className="fill-white"
-            />
-          </div>
+          />
         </div>
-        
+      </div>
+
     </section>
   )
 }

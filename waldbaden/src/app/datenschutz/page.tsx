@@ -4,20 +4,20 @@ import './datenschutz.css'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Datenschutz – Waldbaden mit Christiane",
+  title: "Datenschutz",
   description:
-    "Datenschutzerklärung gemäß DSGVO für waldbaden-mit-christiane.de.",
+    "Datenschutzerklärung gemäß DSGVO für Waldbaden mit Christiane.",
   openGraph: {
-    title: "Datenschutz – Waldbaden mit Christiane",
+    title: "Datenschutz",
     description:
-      "Datenschutzerklärung gemäß DSGVO für waldbaden-mit-christiane.de.",
+      "Datenschutzerklärung gemäß DSGVO für Waldbaden mit Christiane.",
     images: ["/og-default.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Datenschutz – Waldbaden mit Christiane",
+    title: "Datenschutz",
     description:
-      "Datenschutzerklärung gemäß DSGVO für waldbaden-mit-christiane.de.",
+      "Datenschutzerklärung gemäß DSGVO für Waldbaden mit Christiane.",
     images: ["/og-default.jpg"],
   },
   alternates: {
@@ -181,7 +181,7 @@ export default function Datenschutz() {
       <p>Es werden keine Analyse- oder Trackingdienste verwendet.</p>
 
       <p>
-        <strong>Stand dieser Datenschutzerklärung:</strong> November 2025
+        <strong>Stand dieser Datenschutzerklärung:</strong> Januar 2026
       </p>
     </main>
   );

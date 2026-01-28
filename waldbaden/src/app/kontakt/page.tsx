@@ -3,20 +3,20 @@ import { Metadata } from "next";
 import Form from "./Form";
 
 export const metadata: Metadata = {
-  title: "Anmeldung – Waldbaden mit Christiane",
+  title: "Anmeldung & Kontakt",
   description:
-    "Jetzt Platz sichern und fürs Waldbaden im Raum Braunschweig und Gifhorn anmelden – schenke dir erholsame Naturmomente, reduziere Stress und starte deine Auszeit.",
+    "Melde dich jetzt zum Waldbaden in Braunschweig und Gifhorn an. Christiane Thoroe freut sich auf deine Nachricht.",
   openGraph: {
-    title: "Anmeldung – Waldbaden mit Christiane",
+    title: "Anmeldung & Kontakt",
     description:
-      "Jetzt Platz sichern und fürs Waldbaden im Raum Braunschweig und Gifhorn anmelden – schenke dir erholsame Naturmomente, reduziere Stress und starte deine Auszeit.",
+      "Melde dich jetzt zum Waldbaden in Braunschweig und Gifhorn an. Christiane Thoroe freut sich auf deine Nachricht.",
     images: ["/wald5.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anmeldung – Waldbaden mit Christiane",
+    title: "Anmeldung & Kontakt",
     description:
-      "Jetzt Platz sichern und fürs Waldbaden im Raum Braunschweig und Gifhorn anmelden – schenke dir erholsame Naturmomente, reduziere Stress und starte deine Auszeit.",
+      "Melde dich jetzt zum Waldbaden in Braunschweig und Gifhorn an. Christiane Thoroe freut sich auf deine Nachricht.",
     images: ["/wald5.webp"],
   },
   alternates: {
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
 
 
 const playfair = Playfair_Display({
-    subsets: ["latin"],
-    weight: ["400", "700"],
-    variable: "--font-playfair",
-    display: "swap",
-    });
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 
 export default function Kontakt() {
-    return <main className={playfair.className}>
-        <Form/>
-    </main>
+  return <main className={playfair.className}>
+    <Form />
+  </main>
 }

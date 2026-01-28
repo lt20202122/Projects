@@ -8,21 +8,21 @@ import { Metadata } from "next";
 import TipsSectionLg from "./TipsSectionLg";
 
 export const metadata: Metadata = {
-  title: "Termine & Preise – Waldbaden mit Christiane",
+  title: "Termine & Preise",
   description:
-    "Alle Waldbaden-Termine und Preise für Braunschweig und Umgebung im Überblick – finde dein passendes Angebot, plane deine Auszeit und sichere dir jetzt deinen Platz.",
+    "Alle Waldbaden-Termine und Preise für Braunschweig und Umgebung im Überblick. Buche jetzt dein passendes Angebot bei Christiane Thoroe.",
   openGraph: {
-    title: "Termine & Preise – Waldbaden mit Christiane",
+    title: "Termine & Preise",
     description:
-      "Alle Waldbaden-Termine und Preise für Braunschweig und Umgebung im Überblick – finde dein passendes Angebot, plane deine Auszeit und sichere dir jetzt deinen Platz.",
-    images: ["/wald13.webp", "/wald13.jpg"],
+      "Alle Waldbaden-Termine und Preise für Braunschweig und Umgebung im Überblick. Buche jetzt dein passendes Angebot bei Christiane Thoroe.",
+    images: ["/wald13.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Termine & Preise – Waldbaden mit Christiane",
+    title: "Termine & Preise",
     description:
-      "Alle Waldbaden-Termine und Preise für Braunschweig und Umgebung im Überblick – finde dein passendes Angebot, plane deine Auszeit und sichere dir jetzt deinen Platz.",
-    images: ["/wald13.webp", "/wald13.jpg"],
+      "Alle Waldbaden-Termine und Preise für Braunschweig und Umgebung im Überblick. Buche jetzt dein passendes Angebot bei Christiane Thoroe.",
+    images: ["/wald13.webp"],
   },
   alternates: {
     canonical: "https://waldbaden-mit-christiane.de/mein-angebot",
@@ -38,15 +38,15 @@ const playfair = Playfair_Display({
 });
 
 export default function MeinAngebot() {
-    
-    return <main className={`${playfair.className} flex flex-col leading-[31.5px] gap-10`}>
-        <HeroSection/>
-        <section>
-          <Course1Section/>
-          <Location2Course1/>
-        </section>
-        <Course2Section />
-        <Course3Section />
-        <TipsSectionLg />
-    </main>
+
+  return <main className={`${playfair.className} flex flex-col leading-[31.5px] gap-10`}>
+    <HeroSection />
+    <section>
+      <Course1Section />
+      <Location2Course1 />
+    </section>
+    <Course2Section />
+    <Course3Section />
+    <TipsSectionLg />
+  </main>
 }

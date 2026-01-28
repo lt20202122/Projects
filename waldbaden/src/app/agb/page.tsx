@@ -10,20 +10,20 @@ const playfair = Playfair_Display({
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AGB – Waldbaden mit Christiane",
+  title: "AGB",
   description:
-    "Allgemeine Geschäftsbedingungen (AGB) von waldbaden-mit-christiane.de.",
+    "Allgemeine Geschäftsbedingungen (AGB) von Waldbaden mit Christiane.",
   openGraph: {
-    title: "AGB – Waldbaden mit Christiane",
+    title: "AGB",
     description:
-      "Allgemeine Geschäftsbedingungen (AGB) von waldbaden-mit-christiane.de.",
+      "Allgemeine Geschäftsbedingungen (AGB) von Waldbaden mit Christiane.",
     images: ["/og-default.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AGB – Waldbaden mit Christiane",
+    title: "AGB",
     description:
-      "Allgemeine Geschäftsbedingungen (AGB) von waldbaden-mit-christiane.de.",
+      "Allgemeine Geschäftsbedingungen (AGB) von Waldbaden mit Christiane.",
     images: ["/og-default.jpg"],
   },
   alternates: {
