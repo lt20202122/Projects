@@ -1,4 +1,4 @@
-export default function QuoteSectionLg({playfair}:{playfair:any}) {
+export default function QuoteSectionLg({ playfair }: { playfair: any }) {
     return (
         <section className="max-w-7xl mx-auto py-24 px-0 relative max-quote:hidden w-full md:w-screen">
             <div className="grid grid-cols-2 bg-accent overflow-hidden">
@@ -13,17 +13,17 @@ export default function QuoteSectionLg({playfair}:{playfair:any}) {
                         </p>
                     </blockquote>
                 </div>
-                
+
                 <div className="relative aspect-4/3">
                     <img
-                            src="/wald2.webp"
-                            loading="lazy"
-                            className="absolute inset-0 w-full h-full object-cover"
-                            alt="Waldlichtung im Morgenlicht"
-                        />
+                        src="/1650391244514.jpg"
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover"
+                        alt="Waldlichtung im Morgenlicht"
+                    />
                 </div>
-        </div>
+            </div>
         </section>
-        
+
     );
-    }
+}

@@ -7,15 +7,15 @@ export default function Hero({ playfair }: { playfair: any }) {
 
     useEffect(() => {
         const handleResize = () => {
-        const width = window.innerWidth;
-        if (width < 768) {
-            // Mobile: keine Animation
-            setScale(1);
-        } else if (width < 1200) {
-            setScale(1.1);
-        } else {
-            setScale(1.15);
-        }
+            const width = window.innerWidth;
+            if (width < 768) {
+                // Mobile: keine Animation
+                setScale(1);
+            } else if (width < 1200) {
+                setScale(1.1);
+            } else {
+                setScale(1.15);
+            }
         };
 
         handleResize(); // direkt beim Mount
@@ -26,31 +26,31 @@ export default function Hero({ playfair }: { playfair: any }) {
 
     return (
         <section className="relative w-full h-screen overflow-hidden">
-        {/* Überschrift */}
-        <div className="absolute inset-0 flex items-start justify-end p-8 sm:p-12 lg:p-16 z-10">
-            <h1
-            className={`${playfair.className} text-white leading-tight text-5xl sm:text-6xl lg:text-7xl drop-shadow-xl max-w-3xl text-right`}
-            >
-            Achtsamkeit <br />im Wald
-            </h1>
-        </div>
+            {/* Überschrift */}
+            <div className="absolute inset-0 flex items-start justify-end p-8 sm:p-12 lg:p-16 z-10">
+                <h1
+                    className={`${playfair.className} text-white leading-tight text-5xl sm:text-6xl lg:text-7xl drop-shadow-xl max-w-3xl text-right`}
+                >
+                    Achtsamkeit <br />im Wald
+                </h1>
+            </div>
 
-        {/* Hintergrundbild */}
-        <div className="absolute inset-0">
-            <Image
-            src="/wald.webp"
-            alt="Waldweg mit Sonnenlicht"
-            fill
-            sizes="100vw"
-            className="object-cover"
-            style={{
-                transform: `scale(${scale})`,
-                transition: scale > 1 ? "transform 0.8s ease-out" : "none",
-            }}
-            priority
-            quality={90}
-            />
-        </div>
+            {/* Hintergrundbild */}
+            <div className="absolute inset-0">
+                <Image
+                    src="/DSC_9483.jpg"
+                    alt="Waldweg mit Sonnenlicht"
+                    fill
+                    sizes="100vw"
+                    className="object-cover"
+                    style={{
+                        transform: `scale(${scale})`,
+                        transition: scale > 1 ? "transform 0.8s ease-out" : "none",
+                    }}
+                    priority
+                    quality={90}
+                />
+            </div>
         </section>
     );
-    }
+}
