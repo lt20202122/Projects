@@ -38,7 +38,7 @@ export default function Hero({ playfair }: { playfair: any }) {
             {/* Hintergrundbild */}
             <div className="absolute inset-0">
                 <Image
-                    src="/DSC_9483.jpg"
+                    src="/DSC_9483.JPG"
                     alt="Waldweg mit Sonnenlicht"
                     fill
                     sizes="100vw"
