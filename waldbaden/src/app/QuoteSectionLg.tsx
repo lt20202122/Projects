@@ -14,7 +14,7 @@ export default function QuoteSectionLg({ playfair }: { playfair: any }) {
                     </blockquote>
                 </div>
 
-                <div className="relative aspect-4/3">
+                <div className="relative h-full">
                     <img
                         src="/1650391244514.jpg"
                         loading="lazy"
