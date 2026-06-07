@@ -11,7 +11,7 @@ const Cards = [
     title: "Achtsam in den Feierabend",
     content: "After-Work-Waldbaden in Gifhorn und Braunschweig",
     dates:
-      "Dienstag, 5. Mai 2026  | 17.00 - 19.15 Uhr#Dienstag, 21. April 2026 | 17.30 - 19.45 Uhr",
+      "Mittwoch, 7. Oktober 2026 | 16.15 - 18.30 Uhr#Dienstag, 8. September 2026 | 17.15 - 19.30 Uhr",
   },
   {
     id: 2,
